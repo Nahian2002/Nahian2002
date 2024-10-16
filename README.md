@@ -60,7 +60,7 @@ I’m currently a university student studying Computer Science and Engineering (
 
 <!--<code><img height="20" src="https://raw.githubusercontent.com/mdsabbiralmamon/mdsabbiralmamon/main/images/next-js.svg"> Next js </img></code>-->
 
-## <img width="40px" src="https://raw.githubusercontent.com/Nahian2002/Nahian2002/main/images/analytics.gif">    Overall GitHub Analytics (Reload if stats aren't showing):
+## <img width="40px" src="https://raw.githubusercontent.com/mdsabbiralmamon/mdsabbiralmamon/main/images/analytics.gif">    Overall GitHub Analytics (Reload if stats aren't showing):
 
 <a href="https://github.com/Nahian2002">
   <img height=" " width="1000vh" src="https://github-readme-streak-stats.herokuapp.com?user=Nahian2002" alt="GitHub Streak" />
