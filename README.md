@@ -22,15 +22,15 @@ I’m currently a university student studying Computer Science and Engineering (
 
 <img width="100%" height="3px" src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif">
 
-<!--## <img width="40px" src="https://raw.githubusercontent.com/mdsabbiralmamon/mdsabbiralmamon/main/images/social.gif">    Connect with me through socials:
+## <img width="40px" src="https://raw.githubusercontent.com/mdsabbiralmamon/mdsabbiralmamon/main/images/social.gif">    Connect with me through socials:
 
-  [![Linked In](https://img.shields.io/badge/-Md_Sabbir_Al_Mamon-darkblue?logo=linkedin&style=plastic)](https://www.linkedin.com/in/jayed-al-nahian-2a5ab3248/)
-  [![Facebook](https://img.shields.io/badge/-Md_Sabbir_Al_Mamon-blue?logo=facebook&style=plastic)](https://www.facebook.com/mdsabb1ralmamon/)
-  [![Twitter](https://img.shields.io/badge/-Md_Sabbir_Al_Mamon-black?logo=x&style=plastic)](https://twitter.com/mdsabbiralmamon)
-  [![Discord](https://img.shields.io/badge/-Tetra_SAM-2c2f33?logo=discord&style=plastic)](https://discordapp.com/users/634075473462296595)
-  [![Ko-fi](https://img.shields.io/badge/-Tetra_SAM-2c2f33?logo=kofi&style=plastic)](https://ko-fi.com/tetrasam)
+  [![LinkedIn](https://img.shields.io/badge/-Jayed_Al_Nahian-darkblue?logo=linkedin&style=plastic)](https://www.linkedin.com/in/jayed-al-nahian-2a5ab3248/)
+  [![Facebook](https://img.shields.io/badge/-Jayed_Al_Nahian-blue?logo=facebook&style=plastic)](https://www.facebook.com/jayed.al.nahian.2002/)
+  [![Twitter](https://img.shields.io/badge/-Jayed_Al_Nahian-black?logo=x&style=plastic)](https://x.com/Jayed_Al_Nahian)
+  [![Discord](https://img.shields.io/badge/-NIGHTMARE-2c2f33?logo=discord&style=plastic)](https://discordapp.com/users/743125182889328653)
+  <!--[![Ko-fi](https://img.shields.io/badge/-Tetra_SAM-2c2f33?logo=kofi&style=plastic)](https://ko-fi.com/tetrasam)-->
 
-<img align='right' src="https://github-readme-stats.vercel.app/api?username=Nahian2002&show_icons=true">--> 
+<img align='right' src="https://github-readme-stats.vercel.app/api?username=Nahian2002&show_icons=true">
 
 ## 🧭    My Current(2024) Status:
   
