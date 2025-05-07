@@ -30,7 +30,7 @@ I’m currently a university student studying Computer Science and Engineering (
 
 <img align='right' src="https://github-readme-stats.vercel.app/api?username=Nahian2002&show_icons=true">
 
-## 🧭 My Current(2024) Status:
+## 🧭 My Current(2025) Status:
 
 👨‍💻 21 Years old Developer  
 👨‍🎓 Studying Computer Science here in Bangladesh
