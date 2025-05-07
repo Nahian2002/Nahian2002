@@ -62,9 +62,9 @@ I’m currently a university student studying Computer Science and Engineering (
   <img height=" " width="1000vh" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Nahian2002" />
 </a>
 
-### <img width="40px" src="https://raw.githubusercontent.com/mdsabbiralmamon/mdsabbiralmamon/main/public/images/ReadmeIcons/status.gif"> How Much I Code :
+<!--### <img width="40px" src="https://raw.githubusercontent.com/mdsabbiralmamon/mdsabbiralmamon/main/public/images/ReadmeIcons/status.gif"> How Much I Code :
 
-<!--<a href="https://wakatime.com/@mdsabbiralmamon">
+<a href="https://wakatime.com/@mdsabbiralmamon">
   <img height=" " width="1000vh" src="https://github-readme-stats.vercel.app/api/wakatime?username=@mdsabbiralmamon" />
 </a>-->
 
