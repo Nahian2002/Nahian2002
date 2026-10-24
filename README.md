@@ -42,34 +42,27 @@ I build things for the fun of figuring them out: Android apps, Linux services, a
 
 ### 🪐 FEATURED EXPERIMENTS
 
-<sub>Four corners of my workbench. Some are private or actively evolving — these aren't advertised as finished releases.</sub>
+<sub>A few personal experiments. Some are still private, and none are presented as finished releases.</sub>
 
-<table>
-<tr>
-<td width="50%" valign="top">
-  <img src="assets/card-nightwave.svg" alt="NightWave — Android music experience" width="100%" />
-  <p>🎧 <strong>NightWave</strong><br/>Building a more thoughtful Android music experience, from playback behavior to a polished interface.</p>
-  <sub>ANDROID · PERSONAL EXPERIMENT</sub>
-</td>
-<td width="50%" valign="top">
-  <img src="assets/card-cosmo.svg" alt="COSMO — desktop assistant" width="100%" />
-  <p>🤖 <strong>COSMO</strong><br/>Exploring an assistant that connects useful tools, automation, and persistent intelligence.</p>
-  <sub>DESKTOP · PERSONAL EXPERIMENT</sub>
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-  <img src="assets/card-homelab.svg" alt="HomeLab — Linux and automation" width="100%" />
-  <p>🖥️ <strong>HomeLab & Automation</strong><br/>A Debian-powered playground of services, media tools, monitoring, and automation.</p>
-  <sub>LINUX · SELF-HOSTED</sub>
-</td>
-<td width="50%" valign="top">
-  <img src="assets/card-worlds.svg" alt="World Building — Unreal Engine" width="100%" />
-  <p>🌌 <strong>Worlds & Simulation</strong><br/>Experimenting with Unreal Engine landscapes, believable environments, and deeper world systems.</p>
-  <sub>UNREAL ENGINE · EXPLORATORY</sub>
-</td>
-</tr>
-</table>
+<div align="center">
+  <picture>
+    <source media="(max-width: 700px)" srcset="assets/featured-mobile.svg" />
+    <img src="assets/featured-desktop.svg" width="100%" alt="Four projects: NightWave (Android music), COSMO (desktop assistant), HomeLab (Linux and self-hosting), and World Building (Unreal Engine)" />
+  </picture>
+</div>
+
+<details>
+<summary><b>🔎 What's inside these experiments?</b></summary>
+
+**🎧 NightWave:** Android music playback, library experiences, and interface design.
+
+**🤖 COSMO:** Assistant interfaces, tool integration, and automation ideas.
+
+**🖥️ HomeLab:** Debian, containers, home media services, and monitoring.
+
+**🌌 World Building:** Unreal Engine landscapes and persistent simulation concepts.
+
+</details>
 
 <details>
 <summary><b>🕹️ Open the lab's secret status panel</b></summary>
@@ -98,24 +91,28 @@ Not every experiment is public yet. These are real repositories you can explore:
 
 <table>
 <tr>
-<td width="50%" valign="top">
+<td width="100%" valign="top">
 <strong><a href="https://github.com/Nahian2002/Fitness-Tracker---CSE215L">💪 Fitness Tracker ↗</a></strong><br/>
 <sub>Java · University project</sub><br/>
 Coursework focused on fitness tracking and application logic.
 </td>
-<td width="50%" valign="top">
+</tr>
+<tr>
+<td width="100%" valign="top">
 <strong><a href="https://github.com/Nahian2002/Automated-Reminder">⏰ Automated Reminder ↗</a></strong><br/>
 <sub>Automation · Experiment</sub><br/>
 A small reminder-focused coding experiment.
 </td>
 </tr>
 <tr>
-<td width="50%" valign="top">
+<td width="100%" valign="top">
 <strong><a href="https://github.com/Nahian2002/CSE-115L-Project">⚙️ CSE115L Project ↗</a></strong><br/>
 <sub>C · University project</sub><br/>
 An earlier C programming and problem-solving project.
 </td>
-<td width="50%" valign="top">
+</tr>
+<tr>
+<td width="100%" valign="top">
 <strong><a href="https://github.com/Nahian2002/Learning-JAVA">☕ Java</a> / <a href="https://github.com/Nahian2002/Learning-C">🧩 C ↗</a></strong><br/>
 <sub>Learning archive</sub><br/>
 Exercises, fundamentals, and practice projects.
@@ -129,8 +126,8 @@ Exercises, fundamentals, and practice projects.
 
 <table>
 <tr>
-<td width="25%" valign="middle"><strong>⌘ Code</strong><br/><sub>Languages &amp; version control</sub></td>
-<td width="75%" valign="middle">
+<td valign="top"><strong>⌘ Code</strong><br/><sub>Languages &amp; version control</sub><br/>
+
 <img alt="C" src="https://img.shields.io/badge/C-324963?style=for-the-badge&amp;logo=c&amp;logoColor=white" />
 <img alt="Java" src="https://img.shields.io/badge/Java-B07219?style=for-the-badge&amp;logo=openjdk&amp;logoColor=white" />
 <img alt="Git" src="https://img.shields.io/badge/Git-E44C30?style=for-the-badge&amp;logo=git&amp;logoColor=white" />
@@ -138,8 +135,8 @@ Exercises, fundamentals, and practice projects.
 </td>
 </tr>
 <tr>
-<td width="25%" valign="middle"><strong>⚙ Systems</strong><br/><sub>Build · run · experiment</sub></td>
-<td width="75%" valign="middle">
+<td valign="top"><strong>⚙ Systems</strong><br/><sub>Build · run · experiment</sub><br/>
+
 <img alt="Linux" src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&amp;logo=linux&amp;logoColor=black" />
 <img alt="Debian" src="https://img.shields.io/badge/Debian-A81D33?style=for-the-badge&amp;logo=debian&amp;logoColor=white" />
 <img alt="Docker" src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&amp;logo=docker&amp;logoColor=white" />
@@ -148,8 +145,8 @@ Exercises, fundamentals, and practice projects.
 </td>
 </tr>
 <tr>
-<td width="25%" valign="middle"><strong>✦ Creative</strong><br/><sub>Design side quests</sub></td>
-<td width="75%" valign="middle">
+<td valign="top"><strong>✦ Creative</strong><br/><sub>Design side quests</sub><br/>
+
 <img alt="Photoshop" src="https://img.shields.io/badge/Photoshop-173C5B?style=for-the-badge&amp;logo=adobephotoshop&amp;logoColor=31A8FF" />
 <img alt="Illustrator" src="https://img.shields.io/badge/Illustrator-4B2715?style=for-the-badge&amp;logo=adobeillustrator&amp;logoColor=FF9A00" />
 <img alt="Premiere Pro" src="https://img.shields.io/badge/Premiere_Pro-2D1F51?style=for-the-badge&amp;logo=adobepremierepro&amp;logoColor=9999FF" />
