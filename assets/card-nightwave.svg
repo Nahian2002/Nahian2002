@@ -5,10 +5,10 @@
 <rect x="4" y="4" width="612" height="189" rx="15" fill="url(#grid)"/>
 <circle cx="504" cy="95" r="141" fill="url(#glow)"/>
 <rect x="28" y="27" rx="4" width="57" height="24" fill="#6BE3F4" fill-opacity=".13" stroke="#6BE3F4" stroke-opacity=".5"/>
-<text x="56" y="43" font-family="Consolas,monospace" font-size="14" text-anchor="middle" fill="#6BE3F4" font-weight="700">01</text>
-<text x="97" y="43" font-family="Consolas,monospace" font-size="14" fill="#9CB4D2" letter-spacing="1.3">ANDROID / AUDIO</text>
+<text x="56" y="43" font-family="Consolas,monospace" font-size="18" text-anchor="middle" fill="#6BE3F4" font-weight="700">01</text>
+<text x="97" y="43" font-family="Consolas,monospace" font-size="18" fill="#9CB4D2" letter-spacing=".65">ANDROID / AUDIO</text>
 <text x="28" y="117" font-family="Arial,Helvetica,sans-serif" font-size="42" font-weight="800" letter-spacing="-1.5" fill="#F3F7FF">NightWave</text>
 <rect x="28" y="133" width="240" height="2" rx="1" fill="#6BE3F4" fill-opacity=".75"/>
-<text x="28" y="160" font-family="Consolas,monospace" font-size="16" fill="#BAD0E8">Music. Mood. Motion.</text>
+<text x="28" y="160" font-family="Consolas,monospace" font-size="21" fill="#BAD0E8">Music. Mood. Motion.</text>
 <g stroke="#6BE3F4" fill="none" stroke-width="6" stroke-linecap="round" opacity=".8"><path d="M442 116V79M469 138V57M496 155V45M523 137V63M550 113V83"/><circle cx="496" cy="101" r="71" stroke-width="2" opacity=".35"/></g>
 </svg>
