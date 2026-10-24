@@ -58,7 +58,7 @@ I build things for the fun of figuring them out: Android apps, Linux services, a
 
 **🤖 COSMO:** Assistant interfaces, tool integration, and automation ideas.
 
-**🖥️ HomeLab:** Debian, containers, home media services, and monitoring.
+**🖥️ HomeLab:** Linux Mint with Cinnamon, containers, home media services, and monitoring.
 
 **🌌 World Building:** Unreal Engine landscapes and persistent simulation concepts.
 
@@ -89,7 +89,7 @@ I build things for the fun of figuring them out: Android apps, Linux services, a
 
 Not every experiment is public yet. These are real repositories you can explore:
 
-<table>
+<table width="100%">
 <tr>
 <td width="100%" valign="top">
 <strong><a href="https://github.com/Nahian2002/Fitness-Tracker---CSE215L">💪 Fitness Tracker ↗</a></strong><br/>
@@ -124,7 +124,7 @@ Exercises, fundamentals, and practice projects.
 
 ### 🧰 THE TOOLKIT
 
-<table>
+<table width="100%">
 <tr>
 <td valign="top"><strong>⌘ Code</strong><br/><sub>Languages &amp; version control</sub><br/>
 
@@ -138,7 +138,8 @@ Exercises, fundamentals, and practice projects.
 <td valign="top"><strong>⚙ Systems</strong><br/><sub>Build · run · experiment</sub><br/>
 
 <img alt="Linux" src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&amp;logo=linux&amp;logoColor=black" />
-<img alt="Debian" src="https://img.shields.io/badge/Debian-A81D33?style=for-the-badge&amp;logo=debian&amp;logoColor=white" />
+<img alt="Linux Mint" src="https://img.shields.io/badge/Linux_Mint-87CF3E?style=for-the-badge&amp;logo=linuxmint&amp;logoColor=white" />
+<img alt="Cinnamon desktop" src="https://img.shields.io/badge/Cinnamon-2D7668?style=for-the-badge&amp;logoColor=white" />
 <img alt="Docker" src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&amp;logo=docker&amp;logoColor=white" />
 <img alt="Android" src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&amp;logo=android&amp;logoColor=black" />
 <img alt="Unreal Engine" src="https://img.shields.io/badge/Unreal_Engine-171C2B?style=for-the-badge&amp;logo=unrealengine&amp;logoColor=white" />
