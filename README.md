@@ -1,85 +1,104 @@
-<!-- Main Banner Section -->
-<!-- Fading Line -->
-<img width="100%" src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="700">
+<!--
+  GitHub profile README for github.com/Nahian2002
+  Original engineering-lab design. Visuals are hosted in this repository.
+-->
 
-<!-- About Section Headers -->
 <div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="assets/hero-light.svg" />
+    <img src="assets/hero-dark.svg" width="100%" alt="Jayed Al Nahian — Engineering Lab. Build, test, iterate." />
+  </picture>
 
-### Hi There!!!<img width="40px" src="https://raw.githubusercontent.com/mdsabbiralmamon/mdsabbiralmamon/main/public/images/ReadmeIcons/hi.gif"> This is
+  <p><strong>Building software, tinkering with systems, and exploring what's possible.</strong></p>
 
-<h1>JAYED AL NAHIAN</h1>
-
-### Total Profile Views: <img src="https://profile-counter.glitch.me/Nahian2002/count.svg">
-
-<img width="100%" src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="700">
-
-Welcome to my profile, I share my projects here.
-I’m currently a university student studying Computer Science and Engineering (CSE) at North South University, Bangladesh. As a new coder in my first semester, I’m currently learning C programming. My academic journey has just begun, and I’m eager to explore the world of coding and problem-solving. While I’m still in the early stages of learning, I look forward to developing my skills further and taking on more challenges in the world of programming.
-
+  <p>
+    <a href="https://www.linkedin.com/in/jayed-al-nahian-2a5ab3248/">LinkedIn</a>
+    &nbsp;·&nbsp;
+    <a href="https://x.com/Jayed_Al_Nahian">X / Twitter</a>
+    &nbsp;·&nbsp;
+    <a href="https://www.facebook.com/jayed.al.nahian.2002/">Facebook</a>
+    &nbsp;·&nbsp;
+    <a href="https://github.com/Nahian2002?tab=repositories">Repositories ↗</a>
+  </p>
 </div>
 
-<img width="100%" height="3px" src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif">
+---
 
-## <img width="40px" src="https://raw.githubusercontent.com/mdsabbiralmamon/mdsabbiralmamon/main/public/images/ReadmeIcons/social.gif"> Connect with me through socials:
+### 01 / A bit about me
 
-[![LinkedIn](https://img.shields.io/badge/-Jayed_Al_Nahian-darkblue?logo=linkedin&style=plastic)](https://www.linkedin.com/in/jayed-al-nahian-2a5ab3248/)
-[![Facebook](https://img.shields.io/badge/-Jayed_Al_Nahian-blue?logo=facebook&style=plastic)](https://www.facebook.com/jayed.al.nahian.2002/)
-[![Twitter](https://img.shields.io/badge/-Jayed_Al_Nahian-black?logo=x&style=plastic)](https://x.com/Jayed_Al_Nahian)
-[![Discord](https://img.shields.io/badge/-NIGHTMARE-2c2f33?logo=discord&style=plastic)](https://discordapp.com/users/743125182889328653)
-<!--[![Ko-fi](https://img.shields.io/badge/-Tetra_SAM-2c2f33?logo=kofi&style=plastic)](https://ko-fi.com/tetrasam)-->
+I'm **Jayed**, a Computer Science & Engineering student at **North South University** in Dhaka, Bangladesh.
 
-<img align='right' src="https://github-readme-stats.vercel.app/api?username=Nahian2002&show_icons=true">
+I like taking ideas beyond the tutorial stage: making an app feel right, keeping a Linux service alive, automating something repetitive, or figuring out why a system doesn't behave as expected. Sometimes that means writing code. Sometimes it means spending far too long debugging it.
 
-## 🧭 My Current(2025) Status:
+> **Build → test → break → understand → improve.** That's usually the process.
 
-👨‍💻 21 Years old Developer  
-👨‍🎓 Studying Computer Science here in Bangladesh
-<!--🚧 **Current Project:** [ ]( )-->
+### 02 / On my workbench
 
-## <img width="40px" src="https://raw.githubusercontent.com/mdsabbiralmamon/mdsabbiralmamon/main/public/images/ReadmeIcons/skills.gif"> My Skills:
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <strong>📱 Apps &amp; interfaces</strong><br/>
+      Exploring Android experiences, UI details, playback systems, and practical web applications.
+    </td>
+    <td width="50%" valign="top">
+      <strong>🖥️ Systems &amp; automation</strong><br/>
+      Linux services, Docker, self-hosting, small tools, and automations that solve real problems.
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <strong>🤖 AI &amp; experiments</strong><br/>
+      Assistant interfaces, local-first ideas, and software that's useful beyond a demo.
+    </td>
+    <td width="50%" valign="top">
+      <strong>🌍 Interactive worlds</strong><br/>
+      Unreal Engine environments, simulation concepts, and the systems behind believable worlds.
+    </td>
+  </tr>
+</table>
 
-### 🟢 Can Use :
+<details>
+<summary><b>↳ A few projects currently in the lab</b></summary>
 
-<!--<code><img height="20" src="https://raw.githubusercontent.com/mdsabbiralmamon/my-git-stats/main/public/images/ReadmeIcons/after-effects.png"> After Effects</img></code>-->
-<!--<code><img height="20" src="https://raw.githubusercontent.com/mdsabbiralmamon/my-git-stats/main/public/images/ReadmeIcons/bootstrap.png"> Bootstrap</img></code>-->
-<!--<code><img height="20" src="https://raw.githubusercontent.com/mdsabbiralmamon/my-git-stats/main/public/images/ReadmeIcons/css-3.png"> CSS 3</img></code>-->
-<!--<code><img height="20" src="https://raw.githubusercontent.com/mdsabbiralmamon/my-git-stats/main/public/images/ReadmeIcons/html-5.png"> HTML 5</img></code>-->
-<code><img height="20" src="https://raw.githubusercontent.com/mdsabbiralmamon/my-git-stats/main/public/images/ReadmeIcons/illustrator.png"> Illustrator</img></code>
-<code><img height="20" src="https://raw.githubusercontent.com/mdsabbiralmamon/my-git-stats/main/public/images/ReadmeIcons/java.png"> JAVA</img></code>
-<code><img height="20" src="https://raw.githubusercontent.com/mdsabbiralmamon/my-git-stats/main/public/images/ReadmeIcons/photoshop.png"> Photoshop</img></code>
-<code><img height="20" src="https://raw.githubusercontent.com/mdsabbiralmamon/my-git-stats/main/public/images/ReadmeIcons/premiere-pro.png"> Premiere Pro</img></code>
-<!--<code><img height="20" src="https://raw.githubusercontent.com/mdsabbiralmamon/my-git-stats/main/public/images/ReadmeIcons/python.png"> Python</img></code>-->
-<!--<code><img height="20" src="https://raw.githubusercontent.com/mdsabbiralmamon/my-git-stats/main/public/images/ReadmeIcons/wordpress.png"> WordPress</img></code>-->
-<!--<code><img height="20" src="https://raw.githubusercontent.com/mdsabbiralmamon/my-git-stats/main/public/images/ReadmeIcons/js.png"> Java Script</img></code>-->
+- **NightWave** — experimenting with an Android music-listening experience.
+- **COSMO** — exploring a desktop assistant and its surrounding tools.
+- **Unreal Engine experiments** — environments, terrain, and persistent simulation concepts.
+- **Homelab projects** — media services, monitoring, and day-to-day automation.
 
-<!--### 🟡 learning Queue :-->
+These are ongoing experiments; some repositories are private or not ready for a public release.
 
-## <img width="40px" src="https://raw.githubusercontent.com/mdsabbiralmamon/mdsabbiralmamon/main/public/images/ReadmeIcons/analytics.gif"> Overall GitHub Analytics (Reload if stats aren't showing):
+</details>
 
-<a href="https://github.com/Nahian2002">
-  <img height=" " width="1000vh" src="https://github-readme-streak-stats.herokuapp.com?user=Nahian2002" alt="GitHub Streak" />
-  <img height=" " width="1000vh" src="https://github-readme-stats.vercel.app/api?username=Nahian2002&include_all_commits=true&show_icons=true&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage" />
-  <img height=" " width="1000vh" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Nahian2002" />
-</a>
+### 03 / Public builds
 
-<!--### <img width="40px" src="https://raw.githubusercontent.com/mdsabbiralmamon/mdsabbiralmamon/main/public/images/ReadmeIcons/status.gif"> How Much I Code :
+A few repositories from my coding journey, from foundational coursework to useful small experiments:
 
-<a href="https://wakatime.com/@mdsabbiralmamon">
-  <img height=" " width="1000vh" src="https://github-readme-stats.vercel.app/api/wakatime?username=@mdsabbiralmamon" />
-</a>-->
+| Project | Focus | What it is |
+| :--- | :--- | :--- |
+| [**Fitness Tracker**](https://github.com/Nahian2002/Fitness-Tracker---CSE215L) | `Java` | A fitness-tracking project created as part of my CSE215L coursework. |
+| [**CSE-115L Project**](https://github.com/Nahian2002/CSE-115L-Project) | `C` | A C programming coursework repository. |
+| [**Automated Reminder**](https://github.com/Nahian2002/Automated-Reminder) | `Experiment` | A small reminder-focused coding project. |
 
-### <img width="40px" src="https://raw.githubusercontent.com/mdsabbiralmamon/mdsabbiralmamon/main/public/images/ReadmeIcons/activity.gif"> Activity Graph :
+<sub>Not everything I build is on GitHub yet. The public repositories are snapshots of the learning process, not a claim that every prototype is finished.</sub>
 
-<img align="center" src="https://github-readme-activity-graph.vercel.app/graph?username=Nahian2002&theme=default"/>
+### 04 / My toolkit
+
+| Area | Tools & interests |
+| :--- | :--- |
+| **Programming fundamentals** | `C` · `Java` · problem-solving |
+| **Systems** | `Linux / Debian` · `Docker` · `Git` · self-hosted services |
+| **Building & exploring** | `Android` · `Unreal Engine 5` · web applications · automation |
+| **Creative tools** | `Photoshop` · `Illustrator` · `Premiere Pro` |
+
+I enjoy learning by making things, not collecting technology logos.
+
+### 05 / Stay connected
+
+If you like software experiments, systems tinkering, or watching projects evolve, you're in the right place.
+
+**[Explore my repositories](https://github.com/Nahian2002?tab=repositories)** · **[Connect on LinkedIn](https://www.linkedin.com/in/jayed-al-nahian-2a5ab3248/)** · **[Find me on X](https://x.com/Jayed_Al_Nahian)**
 
 <div align="center">
-
-<img width="100%" height="3px" src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif"><br /> <br />
-
-<!--liked this template? Why not <a href="https://ko-fi.com/tetrasam">buy me a coffee </a> or drop a star 🥺
-
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Z8Z1IHGLT)
-
-<img width="100%" height="3px" src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif">
-
-</div>-->
+  <sub>DESIGNED TO EVOLVE · MADE WITH CURIOSITY, NOT A TEMPLATE</sub>
+</div>
