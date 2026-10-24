@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="390" viewBox="0 0 1280 390" role="img" aria-label="Jayed Al Nahian engineering lab premium header">
+<title>Jayed Al Nahian — Build, experiment, repeat.</title>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F5F7FE"/><stop offset="1" stop-color="#E8F1FB"/></linearGradient>
+<linearGradient id="accent" x1="0" x2="1"><stop stop-color="#047F86"/><stop offset="0.53" stop-color="#6B50BA"/><stop offset="1" stop-color="#047F86"/></linearGradient>
+<radialGradient id="aura"><stop stop-color="#047F86" stop-opacity=".23"/><stop offset="1" stop-color="#047F86" stop-opacity="0"/></radialGradient>
+<pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="#D2DEEF" stroke-width=".6" opacity=".37"/></pattern>
+<clipPath id="bound"><rect x="2" y="2" width="1276" height="386" rx="21"/></clipPath>
+<style>
+@keyframes blink {0%,44%,100%{opacity:1}45%,88%{opacity:.18}}
+@keyframes turn {to{transform:rotate(360deg)}}
+@keyframes dash {to{stroke-dashoffset:-120}}
+.blink {animation:blink 2.7s infinite}
+.orbit {transform-origin:1056px 182px;animation:turn 46s linear infinite}
+.flow {stroke-dasharray:5 13;animation:dash 9s linear infinite}
+</style></defs>
+<rect x="2" y="2" width="1276" height="386" rx="21" fill="url(#bg)" stroke="#B9CBE1" stroke-width="2"/>
+<g clip-path="url(#bound)">
+<rect width="1280" height="390" fill="url(#grid)"/>
+<circle cx="1050" cy="170" r="298" fill="url(#aura)"/>
+<path d="M0 2H1280" stroke="url(#accent)" stroke-width="5"/>
+<rect x="67" y="45" width="42" height="4" rx="2" fill="#047F86"/>
+<text x="122" y="53" fill="#047F86" font-family="Consolas,Menlo,monospace" font-size="17" font-weight="700" letter-spacing="2.2">THE PERSONAL LAB / 001</text>
+<text x="64" y="167" fill="#16243B" font-family="Arial,Helvetica,sans-serif" font-size="88" font-weight="800" letter-spacing="-3.3">JAYED</text>
+<text x="64" y="255" fill="#16243B" font-family="Arial,Helvetica,sans-serif" font-size="86" font-weight="800" letter-spacing="-3.2">AL NAHIAN<tspan fill="#047F86">.</tspan></text>
+<text x="68" y="300" fill="#4F647F" font-family="Consolas,Menlo,monospace" font-size="17" letter-spacing=".9">BUILD / EXPERIMENT / REFINE / REPEAT</text>
+<path d="M69 323H705" stroke="#B9CBE1" stroke-width="2"/>
+<rect x="69" y="343" width="168" height="23" rx="6" fill="#EDF5FF" stroke="#B9CBE1"/>
+<circle cx="83" cy="354" r="4" fill="#00A7A2" class="blink"/>
+<text x="96" y="360" fill="#047F86" font-size="13" font-family="Consolas,monospace" font-weight="700">SYSTEM ONLINE</text>
+<text x="264" y="359" fill="#4F647F" font-size="13" font-family="Consolas,monospace" letter-spacing=".6">DHAKA / BD</text>
+<line x1="766" y1="34" x2="766" y2="349" stroke="#B9CBE1" stroke-width="1" stroke-dasharray="4 8"/>
+<g>
+<circle cx="1056" cy="182" r="130" fill="none" stroke="#B9CBE1" stroke-width="1"/>
+<circle cx="1056" cy="182" r="100" fill="none" stroke="#6B50BA" stroke-width="1.5" opacity=".55" stroke-dasharray="8 11"/>
+<ellipse cx="1056" cy="182" rx="157" ry="60" fill="none" stroke="#047F86" stroke-width="1.8" transform="rotate(-28 1056 182)" opacity=".75"/>
+<ellipse cx="1056" cy="182" rx="157" ry="60" fill="none" stroke="#6B50BA" stroke-width="1.4" transform="rotate(35 1056 182)" opacity=".65"/>
+<path d="M1056 38V325M910 182H1200" stroke="#B9CBE1" stroke-width="1" stroke-dasharray="3 12"/>
+<circle cx="1056" cy="182" r="66" fill="#EDF5FF" stroke="#047F86" stroke-width="2.2"/>
+<circle cx="1056" cy="182" r="49" fill="none" stroke="#B9CBE1" stroke-width="1"/>
+<text x="1056" y="173" fill="#16243B" text-anchor="middle" font-family="Arial,sans-serif" font-size="28" font-weight="800" letter-spacing="-1">J/N</text>
+<text x="1056" y="195" fill="#047F86" text-anchor="middle" font-family="Consolas,monospace" font-size="11" letter-spacing="1">LAB</text>
+<g class="orbit"><circle cx="1166" cy="129" r="10" fill="#E8F1FB" stroke="#047F86" stroke-width="3"/><circle cx="939" cy="244" r="7" fill="#6B50BA"/></g>
+<circle cx="1185" cy="243" r="5" fill="#00A7A2"/>
+</g>
+<rect x="843" y="339" width="375" height="30" rx="8" fill="#EDF5FF" stroke="#B9CBE1"/>
+<text x="1030" y="359" text-anchor="middle" fill="#4F647F" font-family="Consolas,monospace" font-size="12" letter-spacing="1">NAHIAN2002 / ALWAYS CURIOUS</text>
+</g></svg>
