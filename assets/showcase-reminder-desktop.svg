@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="140" viewBox="0 0 1280 140" role="img" aria-label="Automated Reminder — A small reminder-focused coding project."><title>Automated Reminder — A small reminder-focused coding project.</title><defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0B172A"/><stop offset="1" stop-color="#2B2348"/></linearGradient><pattern id="grid" width="27" height="27" patternUnits="userSpaceOnUse"><path d="M27 0H0V27" fill="none" stroke="#7896B2" stroke-width=".6" opacity=".11"/></pattern></defs><rect x="2" y="2" width="1276" height="136" rx="18" fill="url(#bg)" stroke="#BA9EFE" stroke-opacity=".65" stroke-width="2"/><rect x="3" y="3" width="1274" height="134" rx="17" fill="url(#grid)"/><rect x="25" y="27" width="67" height="36" rx="7" fill="#BA9EFE" fill-opacity=".12" stroke="#BA9EFE" stroke-opacity=".6"/>
+<text x="58" y="52" text-anchor="middle" fill="#BA9EFE" font-family="Consolas,monospace" font-size="21" font-weight="700">02</text>
+<text x="111" y="63" fill="#F4F7FF" font-family="Arial,Helvetica,sans-serif" font-size="34" font-weight="800" letter-spacing="-.9">Automated Reminder</text>
+<text x="113" y="102" fill="#BA9EFE" font-family="Consolas,monospace" font-size="18" letter-spacing="1">AUTOMATION  /  EXPERIMENT</text>
+<line x1="536" y1="25" x2="536" y2="115" stroke="#BA9EFE" stroke-opacity=".4" stroke-width="1.5"/>
+<text x="570" y="64" fill="#D5E1EF" font-family="Arial,Helvetica,sans-serif" font-size="23">A practical reminder-focused project.</text>
+<text x="570" y="95" fill="#AAC5DB" font-family="Arial,Helvetica,sans-serif" font-size="21">Small ideas, useful outcomes.</text>
+<circle cx="1220" cy="71" r="27" fill="#BA9EFE" fill-opacity=".11" stroke="#BA9EFE" stroke-width="2"/>
+<path d="M1209 71H1231M1220 60L1231 71L1220 82" stroke="#BA9EFE" stroke-width="3" fill="none" stroke-linejoin="round" stroke-linecap="round"/></svg>
