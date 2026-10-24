@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="186" viewBox="0 0 1280 186" role="img" aria-label="Until the next build — the lab is always open">
+<title>Until the next build — the lab is always open</title>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0A1424"/><stop offset="1" stop-color="#172541"/></linearGradient>
+<linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#69F0DE"/><stop offset=".5" stop-color="#A995FF"/><stop offset="1" stop-color="#69F0DE"/></linearGradient>
+<radialGradient id="halo"><stop stop-color="#7A68E0" stop-opacity=".22"/><stop offset="1" stop-color="#7A68E0" stop-opacity="0"/></radialGradient>
+<pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="#32506F" stroke-width=".7" opacity=".32"/></pattern>
+<clipPath id="frame"><rect x="2" y="2" width="1276" height="182" rx="16"/></clipPath>
+<style>
+@keyframes rotate {to{transform:rotate(360deg)}}
+@keyframes breathe {0%,100%{opacity:1}50%{opacity:.35}}
+@keyframes flow {to{stroke-dashoffset:-100}}
+.orbit{transform-origin:1134px 91px;animation:rotate 30s linear infinite}
+.led{animation:breathe 2.8s ease-in-out infinite}
+.flow{stroke-dasharray:12 16;animation:flow 6s linear infinite}
+</style>
+</defs>
+<rect x="2" y="2" width="1276" height="182" rx="16" stroke="#385271" stroke-width="2" fill="url(#bg)"/>
+<g clip-path="url(#frame)">
+<rect width="1280" height="186" fill="url(#grid)"/>
+<circle cx="1134" cy="91" r="170" fill="url(#halo)"/>
+<path d="M0 2H1280" stroke="url(#accent)" stroke-width="4"/>
+<circle class="led" cx="59" cy="30" r="4" fill="#69F0DE"/>
+<text x="74" y="36" fill="#69F0DE" font-family="Consolas,Menlo,monospace" font-size="17" font-weight="700" letter-spacing="2">SESSION COMPLETE / LAB ALWAYS OPEN</text>
+<text x="53" y="101" fill="#F2F6FF" font-family="Arial,Helvetica,sans-serif" font-size="53" font-weight="800" letter-spacing="-1.6">UNTIL THE NEXT BUILD<tspan fill="#69F0DE">.</tspan></text>
+<text x="58" y="137" fill="#B3C8E4" font-family="Consolas,Menlo,monospace" font-size="20">Thanks for dropping by — there’s always something in progress.</text>
+<path d="M58 158H967" stroke="#2B4668" stroke-width="2"/>
+<path class="flow" d="M58 158H967" stroke="url(#accent)" stroke-width="2.6"/>
+<circle cx="1134" cy="91" r="55" fill="none" stroke="#69F0DE" stroke-opacity=".6" stroke-width="2"/>
+<circle cx="1134" cy="91" r="34" fill="#122541" stroke="#A995FF" stroke-width="2"/>
+<text x="1134" y="96" fill="#F4F7FF" font-family="Consolas,Menlo,monospace" font-size="17" text-anchor="middle" font-weight="700">J/N</text>
+<g class="orbit"><path d="M1061 91A73 73 0 0 1 1207 91" stroke="#A995FF" stroke-width="2" fill="none" stroke-dasharray="6 8"/><circle cx="1134" cy="18" r="7" fill="#69F0DE"/></g>
+</g></svg>
