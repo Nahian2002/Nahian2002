@@ -127,31 +127,37 @@ Exercises, fundamentals, and practice projects.
 
 ### 🧰 THE TOOLKIT
 
-<div align="center">
+<table>
+<tr>
+<td width="25%" valign="middle"><strong>⌘ Code</strong><br/><sub>Languages &amp; version control</sub></td>
+<td width="75%" valign="middle">
+<img alt="C" src="https://img.shields.io/badge/C-324963?style=for-the-badge&amp;logo=c&amp;logoColor=white" />
+<img alt="Java" src="https://img.shields.io/badge/Java-B07219?style=for-the-badge&amp;logo=openjdk&amp;logoColor=white" />
+<img alt="Git" src="https://img.shields.io/badge/Git-E44C30?style=for-the-badge&amp;logo=git&amp;logoColor=white" />
+<img alt="GitHub" src="https://img.shields.io/badge/GitHub-30363D?style=for-the-badge&amp;logo=github&amp;logoColor=white" />
+</td>
+</tr>
+<tr>
+<td width="25%" valign="middle"><strong>⚙ Systems</strong><br/><sub>Build · run · experiment</sub></td>
+<td width="75%" valign="middle">
+<img alt="Linux" src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&amp;logo=linux&amp;logoColor=black" />
+<img alt="Debian" src="https://img.shields.io/badge/Debian-A81D33?style=for-the-badge&amp;logo=debian&amp;logoColor=white" />
+<img alt="Docker" src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&amp;logo=docker&amp;logoColor=white" />
+<img alt="Android" src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&amp;logo=android&amp;logoColor=black" />
+<img alt="Unreal Engine" src="https://img.shields.io/badge/Unreal_Engine-171C2B?style=for-the-badge&amp;logo=unrealengine&amp;logoColor=white" />
+</td>
+</tr>
+<tr>
+<td width="25%" valign="middle"><strong>✦ Creative</strong><br/><sub>Design side quests</sub></td>
+<td width="75%" valign="middle">
+<img alt="Photoshop" src="https://img.shields.io/badge/Photoshop-173C5B?style=for-the-badge&amp;logo=adobephotoshop&amp;logoColor=31A8FF" />
+<img alt="Illustrator" src="https://img.shields.io/badge/Illustrator-4B2715?style=for-the-badge&amp;logo=adobeillustrator&amp;logoColor=FF9A00" />
+<img alt="Premiere Pro" src="https://img.shields.io/badge/Premiere_Pro-2D1F51?style=for-the-badge&amp;logo=adobepremierepro&amp;logoColor=9999FF" />
+</td>
+</tr>
+</table>
 
-  <sub><b>CODE & VERSION CONTROL</b></sub><br/>
-  <img alt="C" src="https://img.shields.io/badge/C-324963?style=for-the-badge&amp;logo=c&amp;logoColor=white" />
-  <img alt="Java" src="https://img.shields.io/badge/Java-B07219?style=for-the-badge&amp;logo=openjdk&amp;logoColor=white" />
-  <img alt="Git" src="https://img.shields.io/badge/Git-E44C30?style=for-the-badge&amp;logo=git&amp;logoColor=white" />
-  <img alt="GitHub" src="https://img.shields.io/badge/GitHub-30363D?style=for-the-badge&amp;logo=github&amp;logoColor=white" />
-
-  <br/><br/>
-  <sub><b>HOMELAB & PLAYGROUND</b></sub><br/>
-  <img alt="Linux" src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&amp;logo=linux&amp;logoColor=black" />
-  <img alt="Debian" src="https://img.shields.io/badge/Debian-A81D33?style=for-the-badge&amp;logo=debian&amp;logoColor=white" />
-  <img alt="Docker" src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&amp;logo=docker&amp;logoColor=white" />
-  <img alt="Android" src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&amp;logo=android&amp;logoColor=black" />
-  <img alt="Unreal Engine" src="https://img.shields.io/badge/Unreal_Engine-171C2B?style=for-the-badge&amp;logo=unrealengine&amp;logoColor=white" />
-
-  <br/><br/>
-  <sub><b>CREATIVE SIDE QUESTS</b></sub><br/>
-  <img alt="Photoshop" src="https://img.shields.io/badge/Photoshop-173C5B?style=for-the-badge&amp;logo=adobephotoshop&amp;logoColor=31A8FF" />
-  <img alt="Illustrator" src="https://img.shields.io/badge/Illustrator-4B2715?style=for-the-badge&amp;logo=adobeillustrator&amp;logoColor=FF9A00" />
-  <img alt="Premiere Pro" src="https://img.shields.io/badge/Premiere_Pro-2D1F51?style=for-the-badge&amp;logo=adobepremierepro&amp;logoColor=9999FF" />
-
-</div>
-
-<sub>Tools I use or explore — not a claim that I've mastered everything.</sub>
+<sub>Tools I use or explore, rather than claims of mastery.</sub>
 
 ### ⚡ THE LIVE SIGNAL
 
@@ -198,16 +204,10 @@ while (curiosity > fearOfBugs) {
 ---
 
 <div align="center">
-
-  **Thanks for visiting the lab.** 👋<br/>
-  <sub>Have a look around. There is probably something under construction.</sub>
-
-  <br/><br/>
-
-  <a href="https://github.com/Nahian2002?tab=repositories"><img alt="Explore repositories" src="https://img.shields.io/badge/EXPLORE_PROJECTS-63E9D8?style=for-the-badge&amp;logo=github&amp;logoColor=092037" /></a>
-  <a href="https://www.linkedin.com/in/jayed-al-nahian-2a5ab3248/"><img alt="Connect on LinkedIn" src="https://img.shields.io/badge/SAY_HELLO-A995FF?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" /></a>
-
-  <br/><br/>
-  <sub>JAYED AL NAHIAN / BUILD THINGS THAT MAKE YOU CURIOUS.</sub>
-
+  <img src="assets/footer-premium.svg" width="100%" alt="Until the next build — the lab is always open" />
+  <p>
+    <a href="https://github.com/Nahian2002?tab=repositories"><img alt="Explore projects" src="https://img.shields.io/badge/EXPLORE_PROJECTS-63E9D8?style=for-the-badge&amp;logo=github&amp;logoColor=092037" /></a>
+    <a href="https://www.linkedin.com/in/jayed-al-nahian-2a5ab3248/"><img alt="Connect on LinkedIn" src="https://img.shields.io/badge/SAY_HELLO-A995FF?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" /></a>
+  </p>
+  <sub>JAYED AL NAHIAN · CURIOUS BY DEFAULT · ALWAYS ITERATING</sub>
 </div>
