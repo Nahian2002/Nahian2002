@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="738" viewBox="0 0 1280 738" role="img" aria-label="Four projects: NightWave, COSMO, HomeLab and World Building">
+<title>Featured experiments — desktop layout</title><defs><linearGradient id="back" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0B1628"/><stop offset="1" stop-color="#1A2540"/></linearGradient><pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#7F93AE" stroke-width=".7" opacity=".12"/></pattern></defs><g>
+<rect x="10" y="12" width="620" height="350" rx="21" fill="url(#back)" stroke="#68E6F5" stroke-opacity=".65" stroke-width="2"/>
+<rect x="13" y="15" width="614" height="344" rx="20" fill="url(#grid)"/>
+<path d="M37 40H90" stroke="#68E6F5" stroke-width="4" stroke-linecap="round"/>
+<text x="104" y="47" fill="#68E6F5" font-family="Consolas,Menlo,monospace" font-weight="700" font-size="18" letter-spacing="1">01  /  ANDROID AUDIO</text>
+<text x="38" y="153" fill="#F4F7FF" font-family="Arial,Helvetica,sans-serif" font-weight="800" font-size="43" letter-spacing="-1.4">NightWave</text>
+<path d="M39 172H420" stroke="#68E6F5" stroke-width="3" opacity=".7"/>
+<text x="39" y="220" fill="#CAD8EA" font-family="Arial,Helvetica,sans-serif" font-size="23">A more thoughtful Android music experience</text>
+<text x="39" y="258" fill="#CAD8EA" font-family="Arial,Helvetica,sans-serif" font-size="23">Playback, library, and interface experiments</text>
+<text x="40" y="333" fill="#68E6F5" font-family="Consolas,Menlo,monospace" font-size="18" letter-spacing="1">EXPLORING  ·  PRIVATE DEV</text>
+<g transform="translate(506 142)" fill="none" stroke="#68E6F5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><circle cx="0" cy="0" r="75" stroke-width="2" opacity=".35"/><path d="M-55 -27V27M-27 -52V52M0 -70V70M27 -47V47M55 -23V23" stroke-width="8"/></g>
+</g>
+<g>
+<rect x="650" y="12" width="620" height="350" rx="21" fill="url(#back)" stroke="#B9A3FF" stroke-opacity=".65" stroke-width="2"/>
+<rect x="653" y="15" width="614" height="344" rx="20" fill="url(#grid)"/>
+<path d="M677 40H730" stroke="#B9A3FF" stroke-width="4" stroke-linecap="round"/>
+<text x="744" y="47" fill="#B9A3FF" font-family="Consolas,Menlo,monospace" font-weight="700" font-size="18" letter-spacing="1">02  /  AI ASSISTANT</text>
+<text x="678" y="153" fill="#F4F7FF" font-family="Arial,Helvetica,sans-serif" font-weight="800" font-size="43" letter-spacing="-1.4">COSMO</text>
+<path d="M679 172H1060" stroke="#B9A3FF" stroke-width="3" opacity=".7"/>
+<text x="679" y="220" fill="#CAD8EA" font-family="Arial,Helvetica,sans-serif" font-size="23">A personal desktop-assistant experiment</text>
+<text x="679" y="258" fill="#CAD8EA" font-family="Arial,Helvetica,sans-serif" font-size="23">Automation, tools, and useful intelligence</text>
+<text x="680" y="333" fill="#B9A3FF" font-family="Consolas,Menlo,monospace" font-size="18" letter-spacing="1">EXPLORING  ·  PRIVATE DEV</text>
+<g transform="translate(1146 142)" fill="none" stroke="#B9A3FF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><circle cx="0" cy="0" r="73" stroke-width="2.5"/><circle cx="0" cy="0" r="37" stroke-width="2" opacity=".75"/><path d="M-82 0H82M0 -82V82M-58 -58L58 58M-58 58L58 -58" stroke-width="2" opacity=".7"/><circle cx="0" cy="0" r="10" fill="#B9A3FF" stroke="none"/></g>
+</g>
+<g>
+<rect x="10" y="374" width="620" height="350" rx="21" fill="url(#back)" stroke="#72E8C3" stroke-opacity=".65" stroke-width="2"/>
+<rect x="13" y="377" width="614" height="344" rx="20" fill="url(#grid)"/>
+<path d="M37 402H90" stroke="#72E8C3" stroke-width="4" stroke-linecap="round"/>
+<text x="104" y="409" fill="#72E8C3" font-family="Consolas,Menlo,monospace" font-weight="700" font-size="18" letter-spacing="1">03  /  LINUX SYSTEMS</text>
+<text x="38" y="515" fill="#F4F7FF" font-family="Arial,Helvetica,sans-serif" font-weight="800" font-size="43" letter-spacing="-1.4">HomeLab</text>
+<path d="M39 534H420" stroke="#72E8C3" stroke-width="3" opacity=".7"/>
+<text x="39" y="582" fill="#CAD8EA" font-family="Arial,Helvetica,sans-serif" font-size="23">A self-hosted Debian playground</text>
+<text x="39" y="620" fill="#CAD8EA" font-family="Arial,Helvetica,sans-serif" font-size="23">Media services, monitoring, and automation</text>
+<text x="40" y="695" fill="#72E8C3" font-family="Consolas,Menlo,monospace" font-size="18" letter-spacing="1">SELF HOSTED  ·  ACTIVE</text>
+<g transform="translate(506 504)" fill="none" stroke="#72E8C3" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><rect x="-90" y="-73" width="180" height="40" rx="10"/><rect x="-90" y="-18" width="180" height="40" rx="10"/><rect x="-90" y="37" width="180" height="40" rx="10"/><circle cx="-63" cy="-53" r="6" fill="#72E8C3"/><circle cx="-63" cy="2" r="6" fill="#72E8C3"/><circle cx="-63" cy="57" r="6" fill="#72E8C3"/></g>
+</g>
+<g>
+<rect x="650" y="374" width="620" height="350" rx="21" fill="url(#back)" stroke="#FFC885" stroke-opacity=".65" stroke-width="2"/>
+<rect x="653" y="377" width="614" height="344" rx="20" fill="url(#grid)"/>
+<path d="M677 402H730" stroke="#FFC885" stroke-width="4" stroke-linecap="round"/>
+<text x="744" y="409" fill="#FFC885" font-family="Consolas,Menlo,monospace" font-weight="700" font-size="18" letter-spacing="1">04  /  UNREAL ENGINE</text>
+<text x="678" y="515" fill="#F4F7FF" font-family="Arial,Helvetica,sans-serif" font-weight="800" font-size="43" letter-spacing="-1.4">World Building</text>
+<path d="M679 534H1060" stroke="#FFC885" stroke-width="3" opacity=".7"/>
+<text x="679" y="582" fill="#CAD8EA" font-family="Arial,Helvetica,sans-serif" font-size="23">Believable places with deeper systems</text>
+<text x="679" y="620" fill="#CAD8EA" font-family="Arial,Helvetica,sans-serif" font-size="23">Landscapes, simulation, and experimentation</text>
+<text x="680" y="695" fill="#FFC885" font-family="Consolas,Menlo,monospace" font-size="18" letter-spacing="1">EXPERIMENTAL  ·  IN PROGRESS</text>
+<g transform="translate(1146 504)" fill="none" stroke="#FFC885" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><circle cx="0" cy="0" r="80" stroke-width="3"/><ellipse cx="0" cy="0" rx="45" ry="80" stroke-width="2.5"/><ellipse cx="0" cy="0" rx="80" ry="30" stroke-width="2.5"/><path d="M-80 0H80M0 -80V80" stroke-width="2"/><circle cx="68" cy="-48" r="8" fill="#FFC885" stroke="none"/></g>
+</g></svg>
