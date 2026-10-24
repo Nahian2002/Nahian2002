@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="212" viewBox="0 0 1280 212" role="img" aria-label="Interactive-looking animated engineering lab panel: build, break, fix, repeat">
+<title>Engineering Lab — Build. Break. Fix. Repeat.</title>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0B1528"/><stop offset="1" stop-color="#162342"/></linearGradient>
+<linearGradient id="line" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#66E3D3"/><stop offset=".5" stop-color="#A18CFF"/><stop offset="1" stop-color="#66E3D3"/></linearGradient>
+<radialGradient id="halo"><stop stop-color="#35CBBE" stop-opacity=".25"/><stop offset="1" stop-color="#35CBBE" stop-opacity="0"/></radialGradient>
+<pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#385277" stroke-width=".65" opacity=".45"/></pattern>
+<clipPath id="shape"><rect x="2" y="2" width="1276" height="208" rx="17"/></clipPath>
+<style>
+@keyframes pulse{0%,100%{opacity:.28}50%{opacity:1}}
+@keyframes dash{to{stroke-dashoffset:-100}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+@keyframes blink{0%,45%{opacity:1}46%,100%{opacity:0}}
+.led{animation:pulse 2.2s ease-in-out infinite}
+.stream{stroke-dasharray:12 14;animation:dash 3s linear infinite}
+.float{animation:float 4s ease-in-out infinite}
+.cursor{animation:blink 1.2s steps(1) infinite}
+</style>
+</defs>
+<rect x="2" y="2" width="1276" height="208" rx="17" fill="url(#bg)" stroke="#294363" stroke-width="2"/>
+<g clip-path="url(#shape)">
+<rect width="1280" height="212" fill="url(#grid)"/>
+<circle cx="1039" cy="104" r="240" fill="url(#halo)"/>
+<path d="M1 2H1279" stroke="url(#line)" stroke-width="5"/>
+<circle class="led" cx="36" cy="32" r="7" fill="#66E3D3"/>
+<text x="55" y="39" fill="#66E3D3" font-family="Consolas,monospace" font-size="18" font-weight="700" letter-spacing="1.8">LAB CONSOLE / ACTIVE</text>
+<text x="35" y="100" fill="#F1F5FF" font-family="Arial,sans-serif" font-size="45" font-weight="800" letter-spacing="-1.5">BUILD<tspan fill="#66E3D3">.</tspan> BREAK<tspan fill="#A18CFF">.</tspan> FIX<tspan fill="#66E3D3">.</tspan> REPEAT<tspan class="cursor" fill="#66E3D3">_</tspan></text>
+<text x="36" y="140" fill="#96ACC9" font-family="Consolas,monospace" font-size="17" letter-spacing=".5">Android experiments / Linux homelab / code / worlds</text>
+<path d="M34 174H820" stroke="#254866" stroke-width="2"/>
+<path class="stream" d="M34 174H820" stroke="url(#line)" stroke-width="3" fill="none"/>
+<g transform="translate(910 32)" class="float">
+<circle cx="94" cy="73" r="62" fill="none" stroke="#3C547F" stroke-width="2" stroke-dasharray="7 9"/>
+<circle cx="94" cy="73" r="48" fill="none" stroke="#66E3D3" stroke-width="2" opacity=".65"/>
+<path d="M45 73H143M94 24V122" stroke="#496B86" stroke-width="2"/>
+<circle cx="94" cy="73" r="14" fill="#66E3D3" opacity=".20"/>
+<circle class="led" cx="94" cy="73" r="6" fill="#66E3D3"/>
+<circle cx="139" cy="52" r="6" fill="#A18CFF"/>
+<circle cx="59" cy="101" r="4" fill="#66E3D3"/>
+</g>
+<text x="1251" y="195" text-anchor="end" fill="#7796B8" font-family="Consolas,monospace" font-size="13" letter-spacing="1.2">NAHIAN2002 // ALWAYS ITERATING</text>
+</g>
+</svg>
