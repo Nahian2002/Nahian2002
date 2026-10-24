@@ -9,7 +9,7 @@
 <text x="43" y="223" fill="#CAD8EA" font-family="Arial,Helvetica,sans-serif" font-size="27">A more thoughtful Android music experience</text>
 <text x="43" y="261" fill="#CAD8EA" font-family="Arial,Helvetica,sans-serif" font-size="27">Playback, library, and interface experiments</text>
 <text x="44" y="336" fill="#68E6F5" font-family="Consolas,Menlo,monospace" font-size="20" letter-spacing="1">EXPLORING  ·  PRIVATE DEV</text>
-<g transform="translate(547 145)" fill="none" stroke="#68E6F5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><circle cx="0" cy="0" r="75" stroke-width="2" opacity=".35"/><path d="M-55 -27V27M-27 -52V52M0 -70V70M27 -47V47M55 -23V23" stroke-width="8"/></g>
+<g transform="translate(548 145) scale(0.62)" fill="none" stroke="#68E6F5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><circle cx="0" cy="0" r="75" stroke-width="2" opacity=".35"/><path d="M-55 -27V27M-27 -52V52M0 -70V70M27 -47V47M55 -23V23" stroke-width="8"/></g>
 </g>
 <g>
 <rect x="14" y="380" width="672" height="350" rx="21" fill="url(#back)" stroke="#B9A3FF" stroke-opacity=".65" stroke-width="2"/>
@@ -21,7 +21,7 @@
 <text x="43" y="588" fill="#CAD8EA" font-family="Arial,Helvetica,sans-serif" font-size="27">A personal desktop-assistant experiment</text>
 <text x="43" y="626" fill="#CAD8EA" font-family="Arial,Helvetica,sans-serif" font-size="27">Automation, tools, and useful intelligence</text>
 <text x="44" y="701" fill="#B9A3FF" font-family="Consolas,Menlo,monospace" font-size="20" letter-spacing="1">EXPLORING  ·  PRIVATE DEV</text>
-<g transform="translate(547 510)" fill="none" stroke="#B9A3FF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><circle cx="0" cy="0" r="73" stroke-width="2.5"/><circle cx="0" cy="0" r="37" stroke-width="2" opacity=".75"/><path d="M-82 0H82M0 -82V82M-58 -58L58 58M-58 58L58 -58" stroke-width="2" opacity=".7"/><circle cx="0" cy="0" r="10" fill="#B9A3FF" stroke="none"/></g>
+<g transform="translate(548 510) scale(0.62)" fill="none" stroke="#B9A3FF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><circle cx="0" cy="0" r="73" stroke-width="2.5"/><circle cx="0" cy="0" r="37" stroke-width="2" opacity=".75"/><path d="M-82 0H82M0 -82V82M-58 -58L58 58M-58 58L58 -58" stroke-width="2" opacity=".7"/><circle cx="0" cy="0" r="10" fill="#B9A3FF" stroke="none"/></g>
 </g>
 <g>
 <rect x="14" y="745" width="672" height="350" rx="21" fill="url(#back)" stroke="#72E8C3" stroke-opacity=".65" stroke-width="2"/>
@@ -30,10 +30,10 @@
 <text x="108" y="780" fill="#72E8C3" font-family="Consolas,Menlo,monospace" font-weight="700" font-size="20" letter-spacing="1">03  /  LINUX SYSTEMS</text>
 <text x="42" y="886" fill="#F4F7FF" font-family="Arial,Helvetica,sans-serif" font-weight="800" font-size="48" letter-spacing="-1.4">HomeLab</text>
 <path d="M43 905H424" stroke="#72E8C3" stroke-width="3" opacity=".7"/>
-<text x="43" y="953" fill="#CAD8EA" font-family="Arial,Helvetica,sans-serif" font-size="27">A self-hosted Debian playground</text>
-<text x="43" y="991" fill="#CAD8EA" font-family="Arial,Helvetica,sans-serif" font-size="27">Media services, monitoring, and automation</text>
+<text x="43" y="953" fill="#CAD8EA" font-family="Arial,Helvetica,sans-serif" font-size="27">A Linux Mint Cinnamon home lab</text>
+<text x="43" y="991" fill="#CAD8EA" font-family="Arial,Helvetica,sans-serif" font-size="27">Media services, automation, and monitoring</text>
 <text x="44" y="1066" fill="#72E8C3" font-family="Consolas,Menlo,monospace" font-size="20" letter-spacing="1">SELF HOSTED  ·  ACTIVE</text>
-<g transform="translate(547 875)" fill="none" stroke="#72E8C3" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><rect x="-90" y="-73" width="180" height="40" rx="10"/><rect x="-90" y="-18" width="180" height="40" rx="10"/><rect x="-90" y="37" width="180" height="40" rx="10"/><circle cx="-63" cy="-53" r="6" fill="#72E8C3"/><circle cx="-63" cy="2" r="6" fill="#72E8C3"/><circle cx="-63" cy="57" r="6" fill="#72E8C3"/></g>
+<g transform="translate(548 875) scale(0.62)" fill="none" stroke="#72E8C3" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><rect x="-90" y="-73" width="180" height="40" rx="10"/><rect x="-90" y="-18" width="180" height="40" rx="10"/><rect x="-90" y="37" width="180" height="40" rx="10"/><circle cx="-63" cy="-53" r="6" fill="#72E8C3"/><circle cx="-63" cy="2" r="6" fill="#72E8C3"/><circle cx="-63" cy="57" r="6" fill="#72E8C3"/></g>
 </g>
 <g>
 <rect x="14" y="1110" width="672" height="350" rx="21" fill="url(#back)" stroke="#FFC885" stroke-opacity=".65" stroke-width="2"/>
@@ -45,5 +45,5 @@
 <text x="43" y="1318" fill="#CAD8EA" font-family="Arial,Helvetica,sans-serif" font-size="27">Believable places with deeper systems</text>
 <text x="43" y="1356" fill="#CAD8EA" font-family="Arial,Helvetica,sans-serif" font-size="27">Landscapes, simulation, and experimentation</text>
 <text x="44" y="1431" fill="#FFC885" font-family="Consolas,Menlo,monospace" font-size="20" letter-spacing="1">EXPERIMENTAL  ·  IN PROGRESS</text>
-<g transform="translate(547 1240)" fill="none" stroke="#FFC885" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><circle cx="0" cy="0" r="80" stroke-width="3"/><ellipse cx="0" cy="0" rx="45" ry="80" stroke-width="2.5"/><ellipse cx="0" cy="0" rx="80" ry="30" stroke-width="2.5"/><path d="M-80 0H80M0 -80V80" stroke-width="2"/><circle cx="68" cy="-48" r="8" fill="#FFC885" stroke="none"/></g>
+<g transform="translate(548 1240) scale(0.62)" fill="none" stroke="#FFC885" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><circle cx="0" cy="0" r="80" stroke-width="3"/><ellipse cx="0" cy="0" rx="45" ry="80" stroke-width="2.5"/><ellipse cx="0" cy="0" rx="80" ry="30" stroke-width="2.5"/><path d="M-80 0H80M0 -80V80" stroke-width="2"/><circle cx="68" cy="-48" r="8" fill="#FFC885" stroke="none"/></g>
 </g></svg>
