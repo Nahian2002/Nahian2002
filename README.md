@@ -1,6 +1,6 @@
 <!--
   JAYED AL NAHIAN / THE PERSONAL LAB
-  Premium profile v4: original local SVG art; fun elements preserved.
+  Personal Lab: original theme preserved; public NightWave spotlight added.
   All project imagery is original and stored in /assets.
   Live typing + streak are third-party services and may occasionally be delayed.
 -->
@@ -36,13 +36,15 @@ I build things for the fun of figuring them out: Android apps, Linux services, a
 
 **Currently obsessed with:** seamless app experiences · reliable self-hosting · AI assistants · Unreal Engine environments.
 
+**🎧 Now building in public:** [NightWave](https://github.com/Nahian2002/NightWave), my independent Android music player. [Explore the source →](https://github.com/Nahian2002/NightWave)
+
 <div align="center">
   <img src="assets/lab-console-premium.svg" width="100%" alt="Animated development console: build, break, fix, repeat" />
 </div>
 
 ### 🪐 FEATURED EXPERIMENTS
 
-<sub>A few personal experiments. Some are still private, and none are presented as finished releases.</sub>
+<sub>NightWave is now public. COSMO, HomeLab, and world building are personal explorations at different stages.</sub>
 
 <div align="center">
   <picture>
@@ -54,7 +56,7 @@ I build things for the fun of figuring them out: Android apps, Linux services, a
 <details>
 <summary><b>🔎 What's inside these experiments?</b></summary>
 
-**🎧 NightWave:** Android music playback, library experiences, and interface design.
+**🎧 [NightWave](https://github.com/Nahian2002/NightWave):** Public Android music-player source: local music, playlists, imported synchronized lyrics, and Sound Studio. Still in development.
 
 **🤖 COSMO:** Assistant interfaces, tool integration, and automation ideas.
 
@@ -87,7 +89,22 @@ I build things for the fun of figuring them out: Android apps, Linux services, a
 
 ### 🚀 OPEN-SOURCE & PUBLIC CODE
 
-<sub>Real public repositories — earlier coursework, coding experiments and the foundations behind bigger ideas. Tap any card to explore the actual code.</sub>
+<sub>NightWave leads the public builds below, alongside my earlier coursework and coding experiments. Tap any card to explore the code.</sub>
+
+<a href="https://github.com/Nahian2002/NightWave">
+  <picture>
+    <source media="(max-width: 700px)" srcset="assets/showcase-nightwave-mobile.svg" />
+    <img src="assets/showcase-nightwave-desktop.svg" width="100%" alt="NightWave — featured public Android music-player source. Kotlin, Jetpack Compose and Media3; local music, playlists and synchronized lyrics. In development." />
+  </picture>
+</a>
+
+**🎧 NightWave** brings together my interests in music, interface design, and Android development. The source includes local playback, playlists, imported synchronized lyrics, Sound Studio, and optional Google Drive backup.
+
+**[Explore the source →](https://github.com/Nahian2002/NightWave)** · [Build notes](https://github.com/Nahian2002/NightWave/blob/main/docs/BUILD_AND_RELEASE.md) · [What's next](https://github.com/Nahian2002/NightWave/blob/main/docs/PRODUCT_QUALITY_ROADMAP.md)
+
+<sub>Public source · In development · An APK release is still pending validation.</sub>
+
+<br/><br/>
 
 <div align="center">
 
@@ -131,6 +148,7 @@ I build things for the fun of figuring them out: Android apps, Linux services, a
 <details>
 <summary><b>🗂️ Prefer ordinary text links? Open the project index</b></summary>
 
+- [NightWave — Android music player, public source](https://github.com/Nahian2002/NightWave)
 - [Fitness Tracker — Java coursework](https://github.com/Nahian2002/Fitness-Tracker---CSE215L)
 - [Automated Reminder — coding experiment](https://github.com/Nahian2002/Automated-Reminder)
 - [CSE115L — C programming coursework](https://github.com/Nahian2002/CSE-115L-Project)
@@ -148,7 +166,7 @@ I build things for the fun of figuring them out: Android apps, Linux services, a
 <div align="center">
   <picture>
     <source media="(max-width: 700px)" srcset="assets/toolkit-mobile.svg" />
-    <img src="assets/toolkit-wide.svg" width="100%" alt="My toolkit: C, Java, Git, GitHub; Linux Mint, Cinnamon, Docker, Android, Unreal Engine; Photoshop, Illustrator, and Premiere Pro" />
+    <img src="assets/toolkit-wide.svg" width="100%" alt="My toolkit: C, Java, Kotlin, Jetpack Compose, Git, GitHub; Linux Mint, Cinnamon, Docker, Android, Unreal Engine; Photoshop, Illustrator, and Premiere Pro" />
   </picture>
 </div>
 
