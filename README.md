@@ -48,8 +48,8 @@ I build things for the fun of figuring them out: Android apps, Linux services, a
 
 <div align="center">
   <picture>
-    <source media="(max-width: 700px)" srcset="assets/featured-mobile.svg" />
-    <img src="assets/featured-desktop.svg" width="100%" alt="Four projects: NightWave (Android music), COSMO (desktop assistant), HomeLab (Linux and self-hosting), and World Building (Unreal Engine)" />
+    <source media="(max-width: 700px)" srcset="assets/featured-public-mobile.svg" />
+    <img src="assets/featured-public-desktop.svg" width="100%" alt="Four projects: NightWave (Android music), COSMO (desktop assistant), HomeLab (Linux and self-hosting), and World Building (Unreal Engine)" />
   </picture>
 </div>
 
@@ -165,8 +165,8 @@ I build things for the fun of figuring them out: Android apps, Linux services, a
 
 <div align="center">
   <picture>
-    <source media="(max-width: 700px)" srcset="assets/toolkit-mobile.svg" />
-    <img src="assets/toolkit-wide.svg" width="100%" alt="My toolkit: C, Java, Kotlin, Jetpack Compose, Git, GitHub; Linux Mint, Cinnamon, Docker, Android, Unreal Engine; Photoshop, Illustrator, and Premiere Pro" />
+    <source media="(max-width: 700px)" srcset="assets/toolkit-nightwave-mobile.svg" />
+    <img src="assets/toolkit-nightwave-wide.svg" width="100%" alt="My toolkit: C, Java, Kotlin, Jetpack Compose, Git, GitHub; Linux Mint, Cinnamon, Docker, Android, Unreal Engine; Photoshop, Illustrator, and Premiere Pro" />
   </picture>
 </div>
 

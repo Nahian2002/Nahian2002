@@ -7,8 +7,8 @@
 <text x="38" y="153" fill="#F4F7FF" font-family="Arial,Helvetica,sans-serif" font-weight="800" font-size="43" letter-spacing="-1.4">NightWave</text>
 <path d="M39 172H420" stroke="#68E6F5" stroke-width="3" opacity=".7"/>
 <text x="39" y="220" fill="#CAD8EA" font-family="Arial,Helvetica,sans-serif" font-size="23">A more thoughtful Android music experience</text>
-<text x="39" y="258" fill="#CAD8EA" font-family="Arial,Helvetica,sans-serif" font-size="23">Local music, playlists, and synced lyrics</text>
-<text x="40" y="333" fill="#68E6F5" font-family="Consolas,Menlo,monospace" font-size="18" letter-spacing="1">PUBLIC SOURCE  ·  IN DEVELOPMENT</text>
+<text x="39" y="258" fill="#CAD8EA" font-family="Arial,Helvetica,sans-serif" font-size="23">Playback, library, and interface experiments</text>
+<text x="40" y="333" fill="#68E6F5" font-family="Consolas,Menlo,monospace" font-size="18" letter-spacing="1">EXPLORING  ·  PRIVATE DEV</text>
 <g transform="translate(506 142) scale(0.62)" fill="none" stroke="#68E6F5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><circle cx="0" cy="0" r="75" stroke-width="2" opacity=".35"/><path d="M-55 -27V27M-27 -52V52M0 -70V70M27 -47V47M55 -23V23" stroke-width="8"/></g>
 </g>
 <g>
