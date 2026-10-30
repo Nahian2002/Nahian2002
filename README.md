@@ -1,208 +1,110 @@
-<!--
-  JAYED AL NAHIAN / THE PERSONAL LAB
-  Premium profile v4: original local SVG art; fun elements preserved.
-  All project imagery is original and stored in /assets.
-  Live typing + streak are third-party services and may occasionally be delayed.
--->
+<!-- Original artwork lives in assets/on-air. Motion has local still-image fallbacks. -->
 
-<div align="center">
+<picture>
+  <source media="(prefers-reduced-motion: reduce) and (max-width: 700px)" srcset="assets/on-air/hero-mobile-still.png" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/on-air/hero-still.png" />
+  <source media="(max-width: 700px)" srcset="assets/on-air/hero-mobile.gif" />
+  <img src="assets/on-air/hero.gif" width="100%" alt="Hey, I'm Jayed Al Nahian. Ideas on shuffle: apps, automations, and a little creative chaos. CSE at North South University, Dhaka, Bangladesh. An animated record and equalizer." />
+</picture>
+
+<p align="center">
+  <a href="#-on-repeat-nightwave">🎧 Featured build</a> &nbsp; / &nbsp;
+  <a href="#-the-other-channels">🛸 Other channels</a> &nbsp; / &nbsp;
+  <a href="#-the-toolbox">🧰 Toolbox</a> &nbsp; / &nbsp;
+  <a href="https://www.linkedin.com/in/jayed-al-nahian-2a5ab3248/">↗ Say hello</a>
+</p>
+
+### 👋 The human behind the commits
+
+I'm **Jayed Al Nahian**, a **Computer Science & Engineering student at North South University**, based in **Dhaka, Bangladesh**. I like turning “what if?” into something I can actually use.
+
+My projects live somewhere between **software, automation, and visual design**: Android apps, Linux services, assistant experiments, and Unreal Engine worlds. I care about how things feel to use as much as how they work underneath.
+
+**Current rabbit holes:** music-player experiences · reliable self-hosting · AI assistants · world building.
+
+### 🎧 On repeat: NightWave
+
+<a href="https://github.com/Nahian2002/NightWave">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/hero-premium-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="assets/hero-premium-light.svg" />
-    <img src="assets/hero-premium-dark.svg" width="100%" alt="Jayed Al Nahian — The Personal Lab" />
+    <source media="(prefers-reduced-motion: reduce) and (max-width: 700px)" srcset="assets/on-air/nightwave-mobile.svg" />
+    <source media="(prefers-reduced-motion: reduce)" srcset="assets/on-air/nightwave.svg" />
+    <source media="(max-width: 700px)" srcset="assets/on-air/nightwave-mobile.gif" />
+    <img src="assets/on-air/nightwave.gif" width="100%" alt="NightWave — my independent Android music player. Local music, playlists, synchronized lyrics and Sound Studio. Explore the public source." />
   </picture>
+</a>
 
-  <a href="https://github.com/Nahian2002">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&amp;weight=600&amp;size=19&amp;duration=2700&amp;pause=1050&amp;color=62DCD3&amp;center=true&amp;vCenter=true&amp;width=690&amp;height=47&amp;lines=Probably+debugging+something+right+now...;Building+apps%2C+automation+%26+little+experiments;Android+%2B+Linux+%2B+Creative+Chaos;Still+curious.+Still+building." alt="Probably debugging something right now. Building apps, automations, and experiments." />
-  </a>
+**An independent Android music player with an original midnight design.** This is where my interest in music, interface design, and engineering meets actual code.
 
-  <p>
-    <a href="https://www.linkedin.com/in/jayed-al-nahian-2a5ab3248/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" /></a>
-    <a href="https://x.com/Jayed_Al_Nahian"><img alt="X" src="https://img.shields.io/badge/X-171C28?style=for-the-badge&amp;logo=x&amp;logoColor=white" /></a>
-    <a href="https://www.facebook.com/jayed.al.nahian.2002/"><img alt="Facebook" src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&amp;logo=facebook&amp;logoColor=white" /></a>
-    <a href="https://discordapp.com/users/743125182889328653"><img alt="Discord" src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&amp;logo=discord&amp;logoColor=white" /></a>
-  </p>
+- **Your library:** local audio, playlists, liked songs, folders, and listening history.
+- **Keep the music going:** background playback, queues, shuffle, and repeat with Media3.
+- **Make it yours:** imported synchronized lyrics, Sound Studio, and optional Google Drive backup.
 
-  <sub>📍 Dhaka, Bangladesh &nbsp; · &nbsp; 🎓 CSE @ North South University &nbsp; · &nbsp; ⚡ Curious by default</sub>
-</div>
+**Built with:** Kotlin · Jetpack Compose · Android · Media3 · Room
 
----
+**Status:** public source, actively in development. An APK release is still pending validation; the repository is the place to explore the work.
 
-### 👾 THE PERSON BEHIND THE TERMINAL
+**[Explore NightWave →](https://github.com/Nahian2002/NightWave)** &nbsp; · &nbsp; [Build notes](https://github.com/Nahian2002/NightWave/blob/main/docs/BUILD_AND_RELEASE.md) &nbsp; · &nbsp; [What's next](https://github.com/Nahian2002/NightWave/blob/main/docs/PRODUCT_QUALITY_ROADMAP.md)
 
-I'm **Jayed Al Nahian**, a Computer Science & Engineering student who enjoys turning *"what if?"* into *"it actually works."*
+### 🛸 The other channels
 
-I build things for the fun of figuring them out: Android apps, Linux services, automations, ambitious game-world ideas, and the occasional wildly unnecessary experiment.
+<picture>
+  <source media="(max-width: 700px)" srcset="assets/on-air/channels-mobile.svg" />
+  <img src="assets/on-air/channels.svg" width="100%" alt="COSMO: assistant interfaces, tools and automation ideas. HomeLab: Linux, self-hosting and monitoring. World Building: Unreal Engine landscapes and simulation concepts. Personal experiments in progress." />
+</picture>
 
-**Currently obsessed with:** seamless app experiences · reliable self-hosting · AI assistants · Unreal Engine environments.
-
-<div align="center">
-  <img src="assets/lab-console-premium.svg" width="100%" alt="Animated development console: build, break, fix, repeat" />
-</div>
-
-### 🪐 FEATURED EXPERIMENTS
-
-<sub>A few personal experiments. Some are still private, and none are presented as finished releases.</sub>
-
-<div align="center">
-  <picture>
-    <source media="(max-width: 700px)" srcset="assets/featured-mobile.svg" />
-    <img src="assets/featured-desktop.svg" width="100%" alt="Four projects: NightWave (Android music), COSMO (desktop assistant), HomeLab (Linux and self-hosting), and World Building (Unreal Engine)" />
-  </picture>
-</div>
+**COSMO** is my playground for assistant interfaces and automation ideas. **HomeLab** is where I tinker with Linux Mint, Cinnamon, containers, media services, and monitoring. **World building** takes that curiosity into Unreal Engine landscapes and simulation concepts. These are personal explorations at different stages.
 
 <details>
-<summary><b>🔎 What's inside these experiments?</b></summary>
+<summary><b>🗃️ Dig through the public code crate</b></summary>
 
-**🎧 NightWave:** Android music playback, library experiences, and interface design.
+The earlier builds are part of the story too — coursework, practice, and small experiments that helped me get here.
 
-**🤖 COSMO:** Assistant interfaces, tool integration, and automation ideas.
-
-**🖥️ HomeLab:** Linux Mint with Cinnamon, containers, home media services, and monitoring.
-
-**🌌 World Building:** Unreal Engine landscapes and persistent simulation concepts.
+| Project | What's in the crate |
+| :--- | :--- |
+| [Fitness Tracker](https://github.com/Nahian2002/Fitness-Tracker---CSE215L) | Java coursework project |
+| [Automated Reminder](https://github.com/Nahian2002/Automated-Reminder) | Java reminder experiments: daily, weekly, and custom |
+| [Employee Management System](https://github.com/Nahian2002/CSE-115L-Project) | C programming coursework |
+| [Learning Java](https://github.com/Nahian2002/Learning-JAVA) | Java practice and fundamentals |
+| [Learning C](https://github.com/Nahian2002/Learning-C) | C practice and problem solving |
+| [Group project archive](https://github.com/Nahian2002/Git_115_Grp08) | Early C coursework with a team |
 
 </details>
 
+### 🧰 The toolbox
+
+| Channel | Tools I use & explore |
+| :--- | :--- |
+| **App building** | Kotlin · Jetpack Compose · Android · Java · C |
+| **Systems & automation** | Linux Mint / Cinnamon · Docker · Git · GitHub |
+| **Worlds & visuals** | Unreal Engine · Photoshop · Illustrator · Premiere Pro |
+
+I learn by building, breaking, and improving things. The toolbox keeps growing with the projects.
+
 <details>
-<summary><b>🕹️ Open the lab's secret status panel</b></summary>
-<br/>
+<summary><b>🎮 Press START for the developer status screen</b></summary>
 
 ```text
-┌─ JAYED / ENGINEERING LAB ─────────────────┐
-│ curiosity.exe              ● RUNNING     │
-│ one-more-feature.service   ● ENABLED     │
-│ bugs                       ◐ INVESTIGATING
-│ sleep-schedule             ? UNKNOWN     │
-│ final_version              404 NOT FOUND │
-└───────────────────────────────────────────┘
+PLAYER       Jayed
+CLASS        Curious builder
+MAIN QUEST   Make something useful. Make it feel good.
+SIDE QUEST   One more feature. (There is always one.)
+SAVE FILE    final_v7_revised_ACTUALLY_FINAL
+BOSS FIGHT   It worked yesterday.
 
-> make something.
-> break something.
-> learn something.
-> repeat forever.
+              [ BUILD → BREAK → LEARN → REPEAT ]
 ```
 
 </details>
 
-### 🚀 OPEN-SOURCE & PUBLIC CODE
+### 📡 Find me on the same frequency
 
-<sub>Real public repositories — earlier coursework, coding experiments and the foundations behind bigger ideas. Tap any card to explore the actual code.</sub>
+I enjoy talking about Android apps, self-hosting, creative tools, and ambitious little ideas.
 
-<div align="center">
+**[LinkedIn](https://www.linkedin.com/in/jayed-al-nahian-2a5ab3248/)** &nbsp; · &nbsp; **[X](https://x.com/Jayed_Al_Nahian)** &nbsp; · &nbsp; **[Facebook](https://www.facebook.com/jayed.al.nahian.2002/)** &nbsp; · &nbsp; **[Discord](https://discordapp.com/users/743125182889328653)** &nbsp; · &nbsp; [All public repositories ↗](https://github.com/Nahian2002?tab=repositories)
 
-  <a href="https://github.com/Nahian2002/Fitness-Tracker---CSE215L">
-    <picture>
-      <source media="(max-width: 700px)" srcset="assets/showcase-fitness-mobile.svg" />
-      <img src="assets/showcase-fitness-desktop.svg" width="100%" alt="Fitness Tracker — Java coursework" />
-    </picture>
-  </a>
-
-  <a href="https://github.com/Nahian2002/Automated-Reminder">
-    <picture>
-      <source media="(max-width: 700px)" srcset="assets/showcase-reminder-mobile.svg" />
-      <img src="assets/showcase-reminder-desktop.svg" width="100%" alt="Automated Reminder — coding experiment" />
-    </picture>
-  </a>
-
-  <a href="https://github.com/Nahian2002/CSE-115L-Project">
-    <picture>
-      <source media="(max-width: 700px)" srcset="assets/showcase-cse115l-mobile.svg" />
-      <img src="assets/showcase-cse115l-desktop.svg" width="100%" alt="CSE115L — C programming coursework" />
-    </picture>
-  </a>
-
-  <a href="https://github.com/Nahian2002/Learning-JAVA">
-    <picture>
-      <source media="(max-width: 700px)" srcset="assets/showcase-java-mobile.svg" />
-      <img src="assets/showcase-java-desktop.svg" width="100%" alt="Learning Java — practice archive" />
-    </picture>
-  </a>
-
-  <a href="https://github.com/Nahian2002/Learning-C">
-    <picture>
-      <source media="(max-width: 700px)" srcset="assets/showcase-c-mobile.svg" />
-      <img src="assets/showcase-c-desktop.svg" width="100%" alt="Learning C — practice archive" />
-    </picture>
-  </a>
-
-</div>
-
-<details>
-<summary><b>🗂️ Prefer ordinary text links? Open the project index</b></summary>
-
-- [Fitness Tracker — Java coursework](https://github.com/Nahian2002/Fitness-Tracker---CSE215L)
-- [Automated Reminder — coding experiment](https://github.com/Nahian2002/Automated-Reminder)
-- [CSE115L — C programming coursework](https://github.com/Nahian2002/CSE-115L-Project)
-- [Learning Java — practice archive](https://github.com/Nahian2002/Learning-JAVA)
-- [Learning C — practice archive](https://github.com/Nahian2002/Learning-C)
-
-</details>
-
-<div align="right">
-  <a href="https://github.com/Nahian2002?tab=repositories"><b>Browse all public repositories →</b></a>
-</div>
-
-### 🧰 THE TOOLKIT
-
-<div align="center">
+<a href="https://www.linkedin.com/in/jayed-al-nahian-2a5ab3248/">
   <picture>
-    <source media="(max-width: 700px)" srcset="assets/toolkit-mobile.svg" />
-    <img src="assets/toolkit-wide.svg" width="100%" alt="My toolkit: C, Java, Git, GitHub; Linux Mint, Cinnamon, Docker, Android, Unreal Engine; Photoshop, Illustrator, and Premiere Pro" />
+    <source media="(max-width: 700px)" srcset="assets/on-air/footer-mobile.svg" />
+    <img src="assets/on-air/footer.svg" width="100%" alt="Thanks for tuning in. Got a weird idea? Good. Let's build it. Connect on LinkedIn." />
   </picture>
-</div>
-
-<sub>Tools I use and explore — not claims of mastery. Linux Mint with the Cinnamon desktop is my current home lab environment.</sub>
-
-### ⚡ THE LIVE SIGNAL
-
-<div align="center">
-  <a href="https://github.com/Nahian2002">
-    <img src="https://streak-stats.demolab.com/?user=Nahian2002&amp;theme=tokyonight&amp;hide_border=true&amp;background=0B1120&amp;ring=66E3D3&amp;fire=A18CFF&amp;currStreakLabel=66E3D3" width="77%" alt="GitHub contribution streak for Nahian2002" />
-  </a>
-  <br/>
-  <sub>Live GitHub streak · Third-party stats can occasionally lag behind GitHub.</sub>
-</div>
-
-<details>
-<summary><b>📡 Explore the activity logs</b></summary>
-<br/>
-
-- [My contribution calendar](https://github.com/Nahian2002)
-- [Repositories & latest code](https://github.com/Nahian2002?tab=repositories)
-- [Public activity](https://github.com/Nahian2002?tab=overview)
-
-</details>
-
-### 🧪 ONE MORE THING...
-
-```java
-while (curiosity > fearOfBugs) {
-    buildSomething();
-    learnSomething();
-    tryAgain();
-}
-```
-
-<details>
-<summary><b>🥚 You found an easter egg</b></summary>
-<br/>
-
-**Developer:** This is the final version.
-
-**Git:** `final_v7_revised_ACTUALLY_FINAL`
-
-**Developer:** ...I have one more idea.
-
-</details>
-
----
-
-<div align="center">
-  <img src="assets/footer-premium.svg" width="100%" alt="Until the next build — the lab is always open" />
-  <p>
-    <a href="https://github.com/Nahian2002?tab=repositories"><img alt="Explore projects" src="https://img.shields.io/badge/EXPLORE_PROJECTS-63E9D8?style=for-the-badge&amp;logo=github&amp;logoColor=092037" /></a>
-    <a href="https://www.linkedin.com/in/jayed-al-nahian-2a5ab3248/"><img alt="Connect on LinkedIn" src="https://img.shields.io/badge/SAY_HELLO-A995FF?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" /></a>
-  </p>
-  <sub>JAYED AL NAHIAN · CURIOUS BY DEFAULT · ALWAYS ITERATING</sub>
-</div>
+</a>
