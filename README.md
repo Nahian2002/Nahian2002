@@ -89,6 +89,8 @@ I build things for the fun of figuring them out: Android apps, Linux services, a
 
 ### 🚀 OPEN-SOURCE & PUBLIC CODE
 
+**Portfolio map:** [Explore projects by engineering complexity, purpose, and maintenance scope](PORTFOLIO_INDEX.md). Public projects are grouped without rewriting or deleting their histories.
+
 <sub>NightWave leads the public builds below, alongside my earlier coursework and coding experiments. Tap any card to explore the code.</sub>
 
 <a href="https://github.com/Nahian2002/NightWave">
