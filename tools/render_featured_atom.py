@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Render real motion files for GitHub's four-card profile showcase.
 
-APNG plays at an exact rational 60 FPS; GIF fallback uses reliable 50 FPS
+Animated WebP targets 60 FPS with millisecond-accurate pacing; GIF fallback is 50 FPS
 because GIF frame delays have 10 ms resolution. No browser scripts required.
 """
 from __future__ import annotations
@@ -9,7 +9,6 @@ from __future__ import annotations
 import io
 import math
 import struct
-import zlib
 from pathlib import Path
 import xml.etree.ElementTree as ET
 import cairosvg
@@ -108,37 +107,44 @@ def frame(root: ET.Element, i: int) -> None:
         )
 
 
-def create_apng(images: list[Image.Image], output: Path) -> None:
+def create_webp(images: list[Image.Image], output: Path) -> None:
+    # 240 frames / 4000 ms = an average of 60 FPS. WebP supports
+    # millisecond-exact timing; [17, 16, 17] style pacing avoids
+    # GIF's 10ms resolution and browser clamping.
+    durations = [
+        round((i + 1) * 1000 / FPS) - round(i * 1000 / FPS)
+        for i in range(FRAMES)
+    ]
+    if sum(durations) != 4000 or set(durations) != {16, 17}:
+        raise AssertionError("Unexpected 60 FPS WebP timing")
     images[0].save(
-        output, format="PNG", save_all=True, append_images=images[1:],
-        loop=0, duration=17, optimize=True, compress_level=7,
-        disposal=0, blend=0,
+        output, format="WEBP", save_all=True,
+        append_images=images[1:], duration=durations, loop=0,
+        quality=86, method=5, minimize_size=True, allow_mixed=True,
     )
-    # APNG delay is a rational (num/den). Write exactly 1/60 second.
-    content = bytearray(output.read_bytes())
-    offset = 8
-    controls = 0
-    while offset + 12 <= len(content):
-        length = struct.unpack_from(">I", content, offset)[0]
-        name = bytes(content[offset + 4:offset + 8])
-        data_end = offset + 8 + length
-        if name == b"fcTL":
-            if length != 26:
-                raise AssertionError("Unexpected APNG frame-control size")
-            content[offset + 28:offset + 32] = struct.pack(">HH", 1, FPS)
-            crc = zlib.crc32(content[offset + 4:data_end]) & 0xFFFFFFFF
-            struct.pack_into(">I", content, data_end, crc)
-            controls += 1
-        offset = data_end + 4
-        if name == b"IEND":
-            break
-    if controls != FRAMES:
-        raise AssertionError(f"APNG controls: {controls}, expected {FRAMES}")
-    output.write_bytes(content)
+    # Verify the actual WebP animation frame headers and timings.
+    content = output.read_bytes()
+    if content[:4] != b"RIFF" or content[8:12] != b"WEBP":
+        raise AssertionError("Invalid RIFF/WebP file")
+    pos, found = 12, []
+    while pos + 8 <= len(content):
+        name = content[pos:pos + 4]
+        length = struct.unpack_from("<I", content, pos + 4)[0]
+        if name == b"ANMF":
+            found.append(int.from_bytes(content[pos + 20:pos + 23], "little"))
+        pos += 8 + length + length % 2
+    if found != durations:
+        raise AssertionError(
+            f"Encoded WebP timings differ: {len(found)} frames, "
+            f"{sum(found)}ms vs expected {len(durations)} / 4000ms"
+        )
     with Image.open(output) as check:
         if check.n_frames != FRAMES or check.info.get("loop") != 0:
-            raise AssertionError("APNG loop/frame verification failed")
-    print(f"PASS APNG {output.name}: {FRAMES} frames; 1/{FPS}s each; {output.stat().st_size:,} bytes")
+            raise AssertionError("WebP frame/loop verification failed")
+    if output.stat().st_size > 3_000_000:
+        raise AssertionError("WebP too large for responsive profile")
+    print(f"PASS WebP {output.name}: {FRAMES} frames / 60 FPS average "
+          f"/ {output.stat().st_size:,} bytes")
 
 
 def create_gif(images: list[Image.Image], output: Path) -> None:
@@ -177,7 +183,7 @@ def render(source: str, stem: str, width: int) -> None:
             output_width=width, output_height=h,
         )
         images.append(Image.open(io.BytesIO(png)).convert("RGB"))
-    create_apng(images, ASSETS / f"{stem}.png")
+    create_webp(images, ASSETS / f"{stem}.webp")
     create_gif(images, ASSETS / f"{stem}.gif")
     print(f"PASS original card layout: {width}x{h}")
 
