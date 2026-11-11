@@ -9,13 +9,9 @@
 .cosmo-core { animation:core-glow 4.5s ease-in-out infinite; }
 @keyframes server-status { 0%,100% { opacity:1; } 52% { opacity:.36; } }
 .server-led { animation:server-status 3.6s ease-in-out infinite; }
-@keyframes meridian-turn { 0%,100% { transform:scaleX(1); } 50% { transform:scaleX(.23); } }
-.cenqro-meridian { transform-box:fill-box; transform-origin:center; animation:meridian-turn 11s ease-in-out infinite; }
-@keyframes latitude-drift { 0%,100% { transform:rotate(-7deg); } 50% { transform:rotate(7deg); } }
-.cenqro-latitude { transform-box:fill-box; transform-origin:center; animation:latitude-drift 15s ease-in-out infinite; }
-.cenqro-point { animation:core-glow 5s ease-in-out infinite; }
+/* Atom particles are animated in the generated WebP/GIF frames. */
 @media (prefers-reduced-motion:reduce) {
- .nw-wave,.cosmo-spokes,.cosmo-core,.server-led,.cenqro-meridian,.cenqro-latitude,.cenqro-point { animation:none !important; transform:none !important; opacity:1 !important; }
+ .nw-wave,.cosmo-spokes,.cosmo-core,.server-led { animation:none !important; transform:none !important; opacity:1 !important; }
 }
 </style><defs><linearGradient id="back" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0B1628"/><stop offset="1" stop-color="#1A2540"/></linearGradient><pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#7F93AE" stroke-width=".7" opacity=".12"/></pattern></defs><g>
 <rect x="10" y="12" width="620" height="350" rx="21" fill="url(#back)" stroke="#68E6F5" stroke-opacity=".65" stroke-width="2"/>
