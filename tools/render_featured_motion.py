@@ -19,8 +19,8 @@ ROOT = Path(__file__).resolve().parents[1]
 ASSETS = ROOT / "assets"
 NS = "{http://www.w3.org/2000/svg}"
 ET.register_namespace("", "http://www.w3.org/2000/svg")
-FRAMES = 24
-DURATION_MS = 160
+FRAMES = 96
+DURATION_MS = 40  # 25 FPS; same 3.84-second seamless cycle as the previous 24-frame GIFs
 
 
 def icon_group(root: ET.Element, index: int) -> ET.Element:
@@ -78,7 +78,7 @@ def apply_frame(root: ET.Element, frame: int) -> None:
     point = by_class(world, "cenqro-point")
     if len(meridian) != 1 or len(latitude) != 1 or len(point) != 1:
         raise ValueError("CENQRO globe layers not found")
-    meridian[0].set("rx", f"{12 + 33 * abs(math.cos(2 * math.pi * t)):.2f}")
+    meridian[0].set("rx", f"{12 + 33 * math.cos(2 * math.pi * t) ** 2:.2f}")
     latitude[0].set("transform", f"rotate({7 * math.sin(2 * math.pi * t):.2f})")
     point[0].set("r", f"{7 + 2 * (0.5 + 0.5 * math.sin(2 * math.pi * t)):.2f}")
 
@@ -118,11 +118,19 @@ def render(source: str, destination: str, width: int) -> None:
     )
 
     with Image.open(output) as check:
-        if check.n_frames != FRAMES or not check.info.get("loop") == 0:
-            raise AssertionError(f"GIF frame validation failed: {destination}")
-    print(f"OK: {destination} ({width}x{height}, {FRAMES} frames, {output.stat().st_size:,} bytes)")
+        if check.n_frames != FRAMES or check.info.get("loop") != 0:
+            raise AssertionError(f"GIF loop/frame validation failed: {destination}")
+        # Verify the actual encoded delay instead of assuming Pillow honored it.
+        for index in range(FRAMES):
+            check.seek(index)
+            if check.info.get("duration") != DURATION_MS:
+                raise AssertionError(f"Incorrect frame delay at {index} for {destination}")
+    if output.stat().st_size > 2_000_000:
+        raise AssertionError(f"GIF unexpectedly exceeds 2 MB: {destination}")
+    print(f"OK: {destination} ({width}x{height}, {FRAMES} frames, "
+          f"{DURATION_MS}ms/frame, {output.stat().st_size:,} bytes)")
 
 
 if __name__ == "__main__":
-    render("featured-public-desktop.svg", "featured-animated-desktop.gif", 960)
-    render("featured-public-mobile.svg", "featured-animated-mobile.gif", 525)
+    render("featured-public-desktop.svg", "featured-ultrasmooth-desktop.gif", 960)
+    render("featured-public-mobile.svg", "featured-ultrasmooth-mobile.gif", 525)
