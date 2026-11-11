@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="700" height="1480" viewBox="0 0 700 1480" role="img" aria-label="Four projects: NightWave, COSMO, HomeLab and World Building">
-<title>Featured experiments — mobile layout</title><defs><linearGradient id="back" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0B1628"/><stop offset="1" stop-color="#1A2540"/></linearGradient><pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#7F93AE" stroke-width=".7" opacity=".12"/></pattern></defs><g>
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="1480" viewBox="0 0 700 1480" role="img" aria-label="Four projects: NightWave, COSMO, HomeLab and CENQRO">
+<title>Selected engineering work — mobile layout</title><defs><linearGradient id="back" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0B1628"/><stop offset="1" stop-color="#1A2540"/></linearGradient><pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#7F93AE" stroke-width=".7" opacity=".12"/></pattern></defs><g>
 <rect x="14" y="15" width="672" height="350" rx="21" fill="url(#back)" stroke="#68E6F5" stroke-opacity=".65" stroke-width="2"/>
 <rect x="17" y="18" width="666" height="344" rx="20" fill="url(#grid)"/>
 <path d="M41 43H94" stroke="#68E6F5" stroke-width="4" stroke-linecap="round"/>
@@ -30,9 +30,9 @@
 <text x="108" y="780" fill="#72E8C3" font-family="Consolas,Menlo,monospace" font-weight="700" font-size="20" letter-spacing="1">03  /  LINUX SYSTEMS</text>
 <text x="42" y="886" fill="#F4F7FF" font-family="Arial,Helvetica,sans-serif" font-weight="800" font-size="48" letter-spacing="-1.4">HomeLab</text>
 <path d="M43 905H424" stroke="#72E8C3" stroke-width="3" opacity=".7"/>
-<text x="43" y="953" fill="#CAD8EA" font-family="Arial,Helvetica,sans-serif" font-size="27">A Linux Mint Cinnamon home lab</text>
-<text x="43" y="991" fill="#CAD8EA" font-family="Arial,Helvetica,sans-serif" font-size="27">Media services, automation, and monitoring</text>
-<text x="44" y="1066" fill="#72E8C3" font-family="Consolas,Menlo,monospace" font-size="20" letter-spacing="1">SELF HOSTED  ·  ACTIVE</text>
+<text x="43" y="953" fill="#CAD8EA" font-family="Arial,Helvetica,sans-serif" font-size="27">Linux services and self-hosting</text>
+<text x="43" y="991" fill="#CAD8EA" font-family="Arial,Helvetica,sans-serif" font-size="27">Containers, media and monitoring</text>
+<text x="44" y="1066" fill="#72E8C3" font-family="Consolas,Menlo,monospace" font-size="20" letter-spacing="1">SELF HOSTED  ·  PRIVATE SYSTEMS</text>
 <g transform="translate(548 875) scale(0.62)" fill="none" stroke="#72E8C3" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><rect x="-90" y="-73" width="180" height="40" rx="10"/><rect x="-90" y="-18" width="180" height="40" rx="10"/><rect x="-90" y="37" width="180" height="40" rx="10"/><circle cx="-63" cy="-53" r="6" fill="#72E8C3"/><circle cx="-63" cy="2" r="6" fill="#72E8C3"/><circle cx="-63" cy="57" r="6" fill="#72E8C3"/></g>
 </g>
 <g>
@@ -40,10 +40,10 @@
 <rect x="17" y="1113" width="666" height="344" rx="20" fill="url(#grid)"/>
 <path d="M41 1138H94" stroke="#FFC885" stroke-width="4" stroke-linecap="round"/>
 <text x="108" y="1145" fill="#FFC885" font-family="Consolas,Menlo,monospace" font-weight="700" font-size="20" letter-spacing="1">04  /  UNREAL ENGINE</text>
-<text x="42" y="1251" fill="#F4F7FF" font-family="Arial,Helvetica,sans-serif" font-weight="800" font-size="48" letter-spacing="-1.4">World Building</text>
+<text x="42" y="1251" fill="#F4F7FF" font-family="Arial,Helvetica,sans-serif" font-weight="800" font-size="48" letter-spacing="-1.4">CENQRO</text>
 <path d="M43 1270H424" stroke="#FFC885" stroke-width="3" opacity=".7"/>
-<text x="43" y="1318" fill="#CAD8EA" font-family="Arial,Helvetica,sans-serif" font-size="27">Believable places with deeper systems</text>
-<text x="43" y="1356" fill="#CAD8EA" font-family="Arial,Helvetica,sans-serif" font-size="27">Landscapes, simulation, and experimentation</text>
-<text x="44" y="1431" fill="#FFC885" font-family="Consolas,Menlo,monospace" font-size="20" letter-spacing="1">EXPERIMENTAL  ·  IN PROGRESS</text>
+<text x="43" y="1318" fill="#CAD8EA" font-family="Arial,Helvetica,sans-serif" font-size="27">Exploring persistent world systems</text>
+<text x="43" y="1356" fill="#CAD8EA" font-family="Arial,Helvetica,sans-serif" font-size="27">Unreal terrain and diagnostics</text>
+<text x="44" y="1431" fill="#FFC885" font-family="Consolas,Menlo,monospace" font-size="20" letter-spacing="1">RESEARCH  ·  PRIVATE DEVELOPMENT</text>
 <g transform="translate(548 1240) scale(0.62)" fill="none" stroke="#FFC885" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><circle cx="0" cy="0" r="80" stroke-width="3"/><ellipse cx="0" cy="0" rx="45" ry="80" stroke-width="2.5"/><ellipse cx="0" cy="0" rx="80" ry="30" stroke-width="2.5"/><path d="M-80 0H80M0 -80V80" stroke-width="2"/><circle cx="68" cy="-48" r="8" fill="#FFC885" stroke="none"/></g>
 </g></svg>
