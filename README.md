@@ -41,8 +41,8 @@ My work moves between **Android experiences, personal AI tooling, Linux infrastr
 <div align="center">
 
   <picture>
-    <source media="(max-width: 700px)" srcset="assets/featured-animated-mobile.gif" />
-    <img src="assets/featured-animated-desktop.gif" width="100%" alt="Selected engineering: NightWave Android music app, COSMO assistant, HomeLab Linux services, and CENQRO Unreal Engine research" />
+    <source media="(max-width: 700px)" srcset="assets/featured-ultrasmooth-mobile.gif" />
+    <img src="assets/featured-ultrasmooth-desktop.gif" width="100%" alt="Selected engineering: NightWave Android music app, COSMO assistant, HomeLab Linux services, and CENQRO Unreal Engine research" />
   </picture>
 
 </div>
