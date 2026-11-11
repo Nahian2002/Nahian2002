@@ -41,13 +41,15 @@ My work moves between **Android experiences, personal AI tooling, Linux infrastr
 <div align="center">
 
   <picture>
-    <source media="(max-width: 700px)" srcset="assets/featured-ultrasmooth-mobile.gif" />
-    <img src="assets/featured-ultrasmooth-desktop.gif" width="100%" alt="Selected engineering: NightWave Android music app, COSMO assistant, HomeLab Linux services, and CENQRO Unreal Engine research" />
+    <source media="(max-width: 700px)" type="image/webp" srcset="assets/featured-atom60-mobile.webp" />
+    <source media="(max-width: 700px)" type="image/gif" srcset="assets/featured-atom60-mobile.gif" />
+    <source type="image/webp" srcset="assets/featured-atom60-desktop.webp" />
+    <img src="assets/featured-atom60-desktop.gif" width="100%" alt="Animated engineering cards for NightWave, COSMO, HomeLab, and CENQRO, with an atom-style orbit for CENQRO" />
   </picture>
 
 </div>
 
-<sub>Motion-rendered cards for GitHub · [Original scalable artwork](assets/featured-public-desktop.svg) · NightWave has public source; COSMO, HomeLab and CENQRO are private engineering projects or environments.</sub>
+<sub>60 FPS WebP motion with GIF fallback for GitHub · [Original scalable artwork](assets/featured-public-desktop.svg) · NightWave has public source; COSMO, HomeLab and CENQRO are private engineering projects or environments.</sub>
 
 ### 03 / FLAGSHIP PUBLIC BUILD
 
