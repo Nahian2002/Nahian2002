@@ -30,18 +30,30 @@
 <text x="96" y="360" fill="#047F86" font-size="13" font-family="Consolas,monospace" font-weight="700">SYSTEM ONLINE</text>
 <text x="264" y="359" fill="#4F647F" font-size="13" font-family="Consolas,monospace" letter-spacing=".6">DHAKA / BD</text>
 <line x1="766" y1="34" x2="766" y2="349" stroke="#B9CBE1" stroke-width="1" stroke-dasharray="4 8"/>
-<g>
-<circle cx="1056" cy="182" r="130" fill="none" stroke="#B9CBE1" stroke-width="1"/>
-<circle cx="1056" cy="182" r="100" fill="none" stroke="#6B50BA" stroke-width="1.5" opacity=".55" stroke-dasharray="8 11"/>
-<ellipse cx="1056" cy="182" rx="157" ry="60" fill="none" stroke="#047F86" stroke-width="1.8" transform="rotate(-28 1056 182)" opacity=".75"/>
-<ellipse cx="1056" cy="182" rx="157" ry="60" fill="none" stroke="#6B50BA" stroke-width="1.4" transform="rotate(35 1056 182)" opacity=".65"/>
-<path d="M1056 38V325M910 182H1200" stroke="#B9CBE1" stroke-width="1" stroke-dasharray="3 12"/>
-<circle cx="1056" cy="182" r="66" fill="#EDF5FF" stroke="#047F86" stroke-width="2.2"/>
-<circle cx="1056" cy="182" r="49" fill="none" stroke="#B9CBE1" stroke-width="1"/>
-<text x="1056" y="173" fill="#16243B" text-anchor="middle" font-family="Arial,sans-serif" font-size="28" font-weight="800" letter-spacing="-1">J/N</text>
-<text x="1056" y="195" fill="#047F86" text-anchor="middle" font-family="Consolas,monospace" font-size="11" letter-spacing="1">LAB</text>
-<g class="orbit"><circle cx="1166" cy="129" r="10" fill="#E8F1FB" stroke="#047F86" stroke-width="3"/><circle cx="939" cy="244" r="7" fill="#6B50BA"/></g>
-<circle cx="1185" cy="243" r="5" fill="#00A7A2"/>
+<g id="hero-core-orbit-field">
+<circle cx="1056" cy="182" r="130" fill="none" stroke="#B9CBE1" stroke-width="1.1"/>
+<circle class="hero-guide" cx="1056" cy="182" r="109" fill="none" stroke="#6B50BA" stroke-width="1.2" stroke-dasharray="3 10" opacity=".38"/>
+<path d="M1056 29V335M900 182H1212" stroke="#B9CBE1" stroke-width="1" stroke-dasharray="3 14" opacity=".55"/>
+<ellipse class="hero-orbit" data-index="0" cx="1056" cy="182" rx="154" ry="56" fill="none" stroke="#047F86" stroke-width="2.3" transform="rotate(-27 1056 182)" opacity=".88"/>
+<ellipse class="hero-orbit" data-index="1" cx="1056" cy="182" rx="154" ry="56" fill="none" stroke="#6B50BA" stroke-width="2" transform="rotate(38 1056 182)" opacity=".78"/>
+<ellipse class="hero-orbit" data-index="2" cx="1056" cy="182" rx="154" ry="56" fill="none" stroke="#258D9C" stroke-width="1.5" transform="rotate(89 1056 182)" opacity=".5"/>
+<circle class="hero-trail" data-index="0" data-lag="2" cx="1056" cy="182" r="9" fill="#047F86" opacity=".04"/>
+<circle class="hero-trail" data-index="0" data-lag="1" cx="1056" cy="182" r="7" fill="#047F86" opacity=".13"/>
+<circle class="hero-electron-glow" data-index="0" cx="1056" cy="182" r="13" fill="#047F86" opacity=".15"/>
+<circle class="hero-electron" data-index="0" cx="1056" cy="182" r="6.5" fill="#047F86" stroke="#EDF5FF" stroke-width="1.5"/>
+<circle class="hero-trail" data-index="1" data-lag="2" cx="1056" cy="182" r="9" fill="#6B50BA" opacity=".04"/>
+<circle class="hero-trail" data-index="1" data-lag="1" cx="1056" cy="182" r="7" fill="#6B50BA" opacity=".13"/>
+<circle class="hero-electron-glow" data-index="1" cx="1056" cy="182" r="13" fill="#6B50BA" opacity=".15"/>
+<circle class="hero-electron" data-index="1" cx="1056" cy="182" r="5.4" fill="#6B50BA" stroke="#EDF5FF" stroke-width="1.5"/>
+<circle class="hero-trail" data-index="2" data-lag="2" cx="1056" cy="182" r="9" fill="#258D9C" opacity=".04"/>
+<circle class="hero-trail" data-index="2" data-lag="1" cx="1056" cy="182" r="7" fill="#258D9C" opacity=".13"/>
+<circle class="hero-electron-glow" data-index="2" cx="1056" cy="182" r="13" fill="#258D9C" opacity=".15"/>
+<circle class="hero-electron" data-index="2" cx="1056" cy="182" r="5.4" fill="#258D9C" stroke="#EDF5FF" stroke-width="1.5"/>
+<circle class="hero-nucleus-halo" cx="1056" cy="182" r="76" fill="#047F86" opacity=".075"/>
+<circle cx="1056" cy="182" r="65" fill="#EDF5FF" stroke="#047F86" stroke-width="2.3"/>
+<circle class="hero-inner-ring" cx="1056" cy="182" r="49" fill="none" stroke="#B9CBE1" stroke-width="1.15"/>
+<text x="1056" y="172" fill="#16243B" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="25" font-weight="800" letter-spacing="-.5">CORE</text>
+<text x="1056" y="195" fill="#047F86" text-anchor="middle" font-family="Consolas,Menlo,monospace" font-size="11" font-weight="700" letter-spacing="2.8">LAB</text>
 </g>
 <rect x="843" y="339" width="375" height="30" rx="8" fill="#EDF5FF" stroke="#B9CBE1"/>
 <text x="1030" y="359" text-anchor="middle" fill="#4F647F" font-family="Consolas,monospace" font-size="12" letter-spacing="1">NAHIAN2002 / ALWAYS CURIOUS</text>
