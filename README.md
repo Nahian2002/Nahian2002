@@ -83,13 +83,13 @@ The private project descriptions are intentionally high-level. Full source, conf
 <div align="center">
 
   <picture>
-    <source media="(max-width: 700px)" srcset="assets/toolkit-engineering-mobile.svg" />
-    <img src="assets/toolkit-engineering-wide.svg" width="100%" alt="My engineering toolkit: Python, Kotlin, Java, C, Git, Gradle, Android, Jetpack Compose, Media3, Swing, Linux, Docker, Nginx, systemd, GitHub Actions, Cloudflare, and creative tools" />
+    <source media="(max-width: 700px)" srcset="assets/toolkit-nightwave-mobile.svg" />
+    <img src="assets/toolkit-nightwave-wide.svg" width="100%" alt="My toolkit: C, Java, Kotlin, Compose, Git, GitHub, Linux, Docker, Android, Unreal Engine and creative tools" />
   </picture>
 
 </div>
 
-<sub>Technologies used across projects and experiments, not a claim of equal proficiency. The practical focus is Android product engineering, Python automation, Linux operations and repeatable QA.</sub>
+<sub>Classic three-column toolkit restored. Also in current projects: Python, Media3, Gradle, Nginx, systemd, GitHub Actions and Cloudflare. The visual includes tools from earlier and current environments, not a claim of equal proficiency.</sub>
 
 ### 05 / PUBLIC WORK & COLLABORATION
 
