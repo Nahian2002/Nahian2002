@@ -47,5 +47,6 @@ jobs:
           git add assets/hero-core-double-spin-*.webp assets/hero-core-double-spin-*.gif
           if ! git diff --cached --quiet; then
             git commit -m "assets: add CORE LAB double-spin profile hero motion"
+            git pull --rebase origin "${{ github.ref_name }}"
             git push origin "HEAD:${{ github.ref_name }}"
           fi
