@@ -7,9 +7,12 @@
 <div align="center">
 
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/hero-premium-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="assets/hero-premium-light.svg" />
-    <img src="assets/hero-premium-dark.svg" width="100%" alt="Jayed Al Nahian — The Personal Lab" />
+    <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: light)" srcset="assets/hero-premium-light.svg" />
+    <source media="(prefers-reduced-motion: reduce)" srcset="assets/hero-premium-dark.svg" />
+    <source media="(prefers-color-scheme: light)" type="image/webp" srcset="assets/hero-core-double-spin-light.webp" />
+    <source media="(prefers-color-scheme: dark)" type="image/webp" srcset="assets/hero-core-double-spin-dark.webp" />
+    <source media="(prefers-color-scheme: light)" type="image/gif" srcset="assets/hero-core-double-spin-light.gif" />
+    <img src="assets/hero-core-double-spin-dark.gif" width="100%" alt="Jayed Al Nahian — The Personal Lab. CORE LAB emblem with three independently rotating orbital rings and moving electrons." />
   </picture>
 
   <p>
