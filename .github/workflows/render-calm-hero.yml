@@ -15,8 +15,9 @@ permissions:
 
 jobs:
   render:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
     timeout-minutes: 25
+    # Fresh validation build following the resolved November 11 Actions incident.
     steps:
       - name: Checkout feature branch
         uses: actions/checkout@v4
