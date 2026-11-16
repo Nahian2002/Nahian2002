@@ -98,20 +98,21 @@ The private project descriptions are intentionally high-level. Full source, conf
 
 ### 05 / GITHUB ACTIVITY
 
-<table width="100%">
-  <tr>
-    <td width="43%" valign="top">
-      <a href="https://github.com/Nahian2002">
-        <img src="https://github-stats-extended.vercel.app/api?username=Nahian2002&amp;include_all_commits=true&amp;show_icons=true&amp;show=reviews,discussions_started,discussions_answered,prs_merged&amp;theme=tokyonight&amp;hide_border=true&amp;bg_color=0B1120&amp;title_color=66E3D3&amp;icon_color=A18CFF&amp;text_color=CBD5E1" width="100%" alt="GitHub statistics for Nahian2002, including total commits, stars, pull requests, discussions and rank" />
-      </a>
-    </td>
-    <td width="57%" valign="top">
-      <a href="https://github.com/Nahian2002">
-        <img src="https://streak-stats.demolab.com/?user=Nahian2002&amp;theme=tokyonight&amp;hide_border=true&amp;background=0B1120&amp;ring=66E3D3&amp;fire=A18CFF&amp;currStreakLabel=66E3D3" width="100%" alt="GitHub contribution totals, current streak and longest streak for Nahian2002" />
-      </a>
-    </td>
-  </tr>
-</table>
+<div align="center">
+
+  <p>
+    <a href="https://github.com/Nahian2002">
+      <img src="https://github-stats-extended.vercel.app/api?username=Nahian2002&amp;include_all_commits=true&amp;show_icons=true&amp;show=reviews,discussions_started,discussions_answered,prs_merged&amp;theme=tokyonight&amp;hide_border=true&amp;bg_color=0B1120&amp;title_color=66E3D3&amp;icon_color=A18CFF&amp;text_color=CBD5E1" width="80%" alt="GitHub statistics for Nahian2002, including total commits, stars, pull requests, discussions and rank" />
+    </a>
+  </p>
+
+  <p>
+    <a href="https://github.com/Nahian2002">
+      <img src="https://streak-stats.demolab.com/?user=Nahian2002&amp;theme=tokyonight&amp;hide_border=true&amp;background=0B1120&amp;ring=66E3D3&amp;fire=A18CFF&amp;currStreakLabel=66E3D3" width="80%" alt="GitHub contribution totals, current streak and longest streak for Nahian2002" />
+    </a>
+  </p>
+
+</div>
 
 <sub>Live GitHub totals, commits, PRs, discussions, current streak and longest streak · Third-party providers refresh their statistics automatically, though updates and GitHub image caching can lag behind the <a href="https://github.com/Nahian2002">official contribution calendar</a>. Private contributions and counting rules may differ.</sub>
 
