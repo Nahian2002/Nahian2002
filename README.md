@@ -101,16 +101,16 @@ The private project descriptions are intentionally high-level. Full source, conf
 <div align="center">
 
   <a href="https://github.com/Nahian2002">
-    <img src="https://github-readme-stats.vercel.app/api?username=Nahian2002&amp;include_all_commits=true&amp;show_icons=true&amp;show=reviews,discussions_started,discussions_answered,prs_merged&amp;theme=tokyonight&amp;hide_border=true&amp;bg_color=0B1120&amp;title_color=66E3D3&amp;icon_color=A18CFF&amp;text_color=CBD5E1" width="75%" alt="GitHub statistics for Nahian2002, including total commits and contributions" />
+    <img src="https://github-stats-extended.vercel.app/api?username=Nahian2002&amp;include_all_commits=true&amp;show_icons=true&amp;show=reviews,discussions_started,discussions_answered,prs_merged&amp;theme=tokyonight&amp;hide_border=true&amp;bg_color=0B1120&amp;title_color=66E3D3&amp;icon_color=A18CFF&amp;text_color=CBD5E1" width="100%" alt="GitHub statistics for Nahian2002, including total commits and contributions" />
   </a>
 
   <p>
     <a href="https://github.com/Nahian2002">
-      <img src="https://streak-stats.demolab.com/?user=Nahian2002&amp;theme=tokyonight&amp;hide_border=true&amp;background=0B1120&amp;ring=66E3D3&amp;fire=A18CFF&amp;currStreakLabel=66E3D3" width="75%" alt="GitHub contribution totals, current streak and longest streak for Nahian2002" />
+      <img src="https://streak-stats.demolab.com/?user=Nahian2002&amp;theme=tokyonight&amp;hide_border=true&amp;background=0B1120&amp;ring=66E3D3&amp;fire=A18CFF&amp;currStreakLabel=66E3D3" width="100%" alt="GitHub contribution totals, current streak and longest streak for Nahian2002" />
     </a>
   </p>
 
-  <sub>Live third-party GitHub stats may update later than the official <a href="https://github.com/Nahian2002">contribution calendar</a>. Private contributions and third-party counting rules can differ.</sub>
+  <sub>Live third-party GitHub stats may occasionally be unavailable or update later than the official <a href="https://github.com/Nahian2002">contribution calendar</a>. Private contributions and third-party counting rules can differ.</sub>
 
 </div>
 
