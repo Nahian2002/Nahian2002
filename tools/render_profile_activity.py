@@ -158,21 +158,34 @@ def collect():
         raise RuntimeError("Unrecognized GitHub Stats Extended rank")
     result["rank"]=rank
 
-    # Inspect the existing streak provider too; avoid switching definitions
-    # until the provider's real SVG labels are confirmed.
-    try:
-        u=("https://streak-stats.demolab.com/?user=Nahian2002"
-           "&theme=tokyonight&hide_border=true&background=0B1120"
-           "&ring=66E3D3&fire=A18CFF&currStreakLabel=66E3D3")
-        with urllib.request.urlopen(
-            urllib.request.Request(u,headers={"User-Agent":"Mozilla/5.0"}),timeout=30
-        ) as resp:
-            sr=ET.fromstring(resp.read())
-        st=[(node.text or "").strip() for node in sr.iter()
-            if node.tag.rsplit("}",1)[-1] in ("text","tspan") and (node.text or "").strip()]
-        print("DIAGNOSTIC streak provider tokens",st[:50],flush=True)
-    except Exception as ex:
-        print("NOTICE streak provider diagnostic unavailable",type(ex).__name__,flush=True)
+    # Match the exact current/longest streak and lifetime contributions
+    # shown by the already-used DemoLab card. Treat missing/changed markup as
+    # a refresh failure: retain the previously published SVG.
+    u=("https://streak-stats.demolab.com/?user=Nahian2002"
+       "&theme=tokyonight&hide_border=true&background=0B1120"
+       "&ring=66E3D3&fire=A18CFF&currStreakLabel=66E3D3")
+    with urllib.request.urlopen(
+        urllib.request.Request(u,headers={"User-Agent":"Mozilla/5.0"}),timeout=30
+    ) as resp:
+        sr=ET.fromstring(resp.read())
+    st=[(node.text or "").strip() for node in sr.iter()
+        if node.tag.rsplit("}",1)[-1] in ("text","tspan") and (node.text or "").strip()]
+    for name in ("Total Contributions","Current Streak","Longest Streak"):
+        if st.count(name)!=1:
+            raise RuntimeError("Unrecognized DemoLab streak label "+name)
+    total_idx=st.index("Total Contributions")
+    current_idx=st.index("Current Streak")
+    longest_idx=st.index("Longest Streak")
+    streak_values={
+        "contributions":st[total_idx-1],
+        "current_streak":st[current_idx+2],
+        "longest_streak":st[longest_idx-1],
+    }
+    for name,value in streak_values.items():
+        if not re.fullmatch(r"\d[\d,]*",value):
+            raise RuntimeError("Invalid streak numeric value for "+name)
+        result[name]=value
+    print("SOURCE CHECK: both GitHub Stats Extended and DemoLab live metrics verified",flush=True)
     return result
 
 def fmt(value):
