@@ -60,22 +60,6 @@ def gql(query, vars):
     return obj["data"]
 
 def collect():
-    # Diagnostic for source parity; public SVG only, never logs credentials.
-    try:
-        import xml.etree.ElementTree as ET
-        u=("https://github-stats-extended.vercel.app/api?username=Nahian2002"
-           "&include_all_commits=true&show_icons=true"
-           "&show=reviews,discussions_started,discussions_answered,prs_merged"
-           "&theme=tokyonight&hide_border=true&hide_title=true&line_height=22")
-        req=urllib.request.Request(u,headers={"User-Agent":"Mozilla/5.0"})
-        with urllib.request.urlopen(req,timeout=25) as resp:
-            raw=resp.read()
-        root=ET.fromstring(raw)
-        tokens=[(n.text or "").strip() for n in root.iter()
-                if n.tag.rsplit("}",1)[-1] in ("text","tspan") and (n.text or "").strip()]
-        print("DIAGNOSTIC provider SVG",len(raw),"label-value tokens",tokens[:70],flush=True)
-    except Exception as e:
-        print("DIAGNOSTIC provider unavailable",type(e).__name__,str(e)[:120],flush=True)
     first=gql(BASE,{"login":USER,"cursor":None})["user"]
     if not first or first["login"].lower()!=USER.lower(): raise ValueError("Incorrect GitHub user")
     r=first["repositories"]
@@ -132,10 +116,67 @@ def collect():
     for k,v in result.items():
         if k!="updated" and v is not None and (type(v)!=int or v<0):
             raise ValueError("Bad GitHub number for "+k)
+
+    # Preserve the *same* metric definitions/formatting as the live GitHub
+    # Stats Extended card already used in this profile (including B+ rank).
+    import re
+    import xml.etree.ElementTree as ET
+    source=("https://github-stats-extended.vercel.app/api?username=Nahian2002"
+            "&include_all_commits=true&show_icons=true"
+            "&show=reviews,discussions_started,discussions_answered,prs_merged"
+            "&theme=tokyonight&hide_border=true&hide_title=true&line_height=22")
+    with urllib.request.urlopen(
+        urllib.request.Request(source,headers={"User-Agent":"Mozilla/5.0"}),
+        timeout=30
+    ) as stream:
+        raw=stream.read()
+    if len(raw)<500 or len(raw)>300000:
+        raise RuntimeError("Invalid GitHub Stats Extended response length")
+    root=ET.fromstring(raw)
+    tokens=[(n.text or "").strip() for n in root.iter()
+            if n.tag.rsplit("}",1)[-1] in ("text","tspan") and (n.text or "").strip()]
+    expected={
+        "stars":"Total Stars Earned:",
+        "commits":"Total Commits:",
+        "pull_requests":"Total PRs:",
+        "merged_prs":"Total PRs Merged:",
+        "reviews":"Total PRs Reviewed:",
+        "issues":"Total Issues:",
+        "discussions":"Total Discussions Started:",
+        "answers":"Total Discussions Answered:",
+        "outside":"Contributed to (last year):",
+    }
+    for key,label in expected.items():
+        if tokens.count(label)!=1:
+            raise RuntimeError("Missing/duplicate live stats label: "+label)
+        value=tokens[tokens.index(label)+1].strip()
+        if not re.fullmatch(r"\d[\d,.]*[kKmM]?",value):
+            raise RuntimeError("Unexpected live stats value for "+label)
+        result[key]=value
+    rank=tokens[0] if tokens else ""
+    if not re.fullmatch(r"[A-S][+-]?",rank):
+        raise RuntimeError("Unrecognized GitHub Stats Extended rank")
+    result["rank"]=rank
+
+    # Inspect the existing streak provider too; avoid switching definitions
+    # until the provider's real SVG labels are confirmed.
+    try:
+        u=("https://streak-stats.demolab.com/?user=Nahian2002"
+           "&theme=tokyonight&hide_border=true&background=0B1120"
+           "&ring=66E3D3&fire=A18CFF&currStreakLabel=66E3D3")
+        with urllib.request.urlopen(
+            urllib.request.Request(u,headers={"User-Agent":"Mozilla/5.0"}),timeout=30
+        ) as resp:
+            sr=ET.fromstring(resp.read())
+        st=[(node.text or "").strip() for node in sr.iter()
+            if node.tag.rsplit("}",1)[-1] in ("text","tspan") and (node.text or "").strip()]
+        print("DIAGNOSTIC streak provider tokens",st[:50],flush=True)
+    except Exception as ex:
+        print("NOTICE streak provider diagnostic unavailable",type(ex).__name__,flush=True)
     return result
 
 def fmt(value):
-    return "—" if value is None else f"{value:,}"
+    return "—" if value is None else str(value) if isinstance(value,str) else f"{value:,}"
 
 def render(data):
     items=[
@@ -145,9 +186,9 @@ def render(data):
         ("PRs MERGED","merged_prs","#82C2FD"),
         ("PRs REVIEWED","reviews","#F1F6FD"),
         ("ISSUES OPENED","issues","#F1F6FD"),
-        ("DISCUSSIONS","discussions","#F1F6FD"),
-        ("ACCEPTED ANSWERS","answers","#C8B6FF"),
-        ("EXTERNAL REPOS","outside","#F1F6FD"),
+        ("DISCUSSIONS STARTED","discussions","#F1F6FD"),
+        ("DISCUSSIONS ANSWERED","answers","#C8B6FF"),
+        ("CONTRIBUTED (1Y)","outside","#F1F6FD"),
     ]
     parts=[]
     for i,(label,key,color) in enumerate(items):
@@ -173,6 +214,8 @@ def render(data):
 <rect x="30" y="24" rx="2" width="5" height="33" fill="#63E9DA"/>
 <g font-family="Arial,Helvetica,sans-serif">
 <text x="49" y="49" font-size="27" fill="#F1F6FD" font-weight="700">THE LIVE SIGNAL</text>
+<rect x="343" y="22" width="115" height="33" rx="16" stroke="#4C6591" fill="#19263D"/>
+<text x="400" y="45" text-anchor="middle" font-size="18" font-weight="700" fill="#BAA7FE">RANK {escape(data["rank"])}</text>
 <text x="1235" y="46" text-anchor="end" font-size="16" fill="#8FAAC7">GITHUB · UPDATED {updated}</text>
 <path d="M31 70H1249" stroke="#324B67" stroke-width="1.2"/>
 <rect x="878" y="84" rx="12" width="368" height="314" fill="#101C30" stroke="#304969"/>
