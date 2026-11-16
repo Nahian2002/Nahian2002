@@ -6,7 +6,8 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - profile/activity-single-live-dashboard-v13
+      - main
+      - design/activity-editorial-v14
     paths:
       - tools/render_profile_activity.py
       - .github/workflows/profile-activity-dashboard.yml
@@ -42,9 +43,9 @@ jobs:
           f=Path("assets/github-activity-live.svg")
           s=f.read_text(encoding="utf-8")
           r=ET.fromstring(s)
-          assert r.attrib["viewBox"]=="0 0 1280 432"
-          assert s.count('width="267"') == 9
-          for label in ("TOTAL COMMITS","PULL REQUESTS","PRs MERGED","PRs REVIEWED","ISSUES OPENED","DISCUSSIONS","DISCUSSIONS ANSWERED","CONTRIBUTED (1Y)","RANK","TOTAL CONTRIBUTIONS","CURRENT STREAK","LONGEST STREAK"):
+          assert r.attrib["viewBox"]=="0 0 1280 500"
+          assert s.count('data-key=') == 12
+          for label in ("TOTAL COMMITS","PULL REQUESTS","PRs MERGED","PRs REVIEWED","ISSUES OPENED","DISCUSSIONS STARTED","DISCUSSIONS ANSWERED","CONTRIBUTED (1Y)","RANK","CONTRIBUTIONS","CURRENT STREAK","LONGEST STREAK","STARS EARNED"):
               assert label in s, label
           assert len(s)<100_000
           print(f"SVG PASS: {len(s)} bytes; all metrics preserved")
