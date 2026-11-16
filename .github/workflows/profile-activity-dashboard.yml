@@ -1,0 +1,65 @@
+name: Refresh GitHub profile activity dashboard
+
+on:
+  schedule:
+    - cron: '17 5 * * *'
+  workflow_dispatch:
+  push:
+    branches:
+      - profile/activity-single-live-dashboard-v13
+    paths:
+      - tools/render_profile_activity.py
+      - .github/workflows/profile-activity-dashboard.yml
+
+permissions:
+  contents: write
+
+jobs:
+  refresh-activity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout pinned branch
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Generate dashboard from public GitHub GraphQL activity
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python -u tools/render_profile_activity.py
+
+      - name: Validate image structure and required metric fields
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import xml.etree.ElementTree as ET
+          f=Path("assets/github-activity-live.svg")
+          s=f.read_text(encoding="utf-8")
+          r=ET.fromstring(s)
+          assert r.attrib["viewBox"]=="0 0 1280 432"
+          assert s.count('width="267"') == 9
+          for label in ("TOTAL COMMITS","PULL REQUESTS","PRs MERGED","PRs REVIEWED","ISSUES OPENED","DISCUSSIONS","DISCUSSIONS ANSWERED","CONTRIBUTED (1Y)","RANK","TOTAL CONTRIBUTIONS","CURRENT STREAK","LONGEST STREAK"):
+              assert label in s, label
+          assert len(s)<100_000
+          print(f"SVG PASS: {len(s)} bytes; all metrics preserved")
+          PY
+
+      - name: Commit only changed public SVG (fail closed on missing GitHub data)
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/github-activity-live.svg
+          if ! git diff --cached --quiet; then
+            git commit -m "chore(profile): update daily public activity dashboard"
+            git pull --rebase origin "${{ github.ref_name }}"
+            git push origin "HEAD:${{ github.ref_name }}"
+          else
+            echo "Public GitHub activity snapshot unchanged"
+          fi
