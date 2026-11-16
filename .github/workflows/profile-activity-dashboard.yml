@@ -44,7 +44,7 @@ jobs:
           r=ET.fromstring(s)
           assert r.attrib["viewBox"]=="0 0 1280 432"
           assert s.count('width="267"') == 9
-          for label in ("TOTAL COMMITS","PULL REQUESTS","PRs MERGED","PRs REVIEWED","ISSUES OPENED","DISCUSSIONS","ACCEPTED ANSWERS","EXTERNAL REPOS","TOTAL CONTRIBUTIONS","CURRENT STREAK","LONGEST STREAK"):
+          for label in ("TOTAL COMMITS","PULL REQUESTS","PRs MERGED","PRs REVIEWED","ISSUES OPENED","DISCUSSIONS","DISCUSSIONS ANSWERED","CONTRIBUTED (1Y)","RANK","TOTAL CONTRIBUTIONS","CURRENT STREAK","LONGEST STREAK"):
               assert label in s, label
           assert len(s)<100_000
           print(f"SVG PASS: {len(s)} bytes; all metrics preserved")
