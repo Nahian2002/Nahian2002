@@ -22,7 +22,6 @@ BASE = """query($login:String!,$cursor:String) {
   }
   pullRequests(first:1) { totalCount }
   mergedPRs:pullRequests(first:1,states:[MERGED]) { totalCount }
-  pullRequestReviews(first:1) { totalCount }
   issues(first:1) { totalCount }
   repositoryDiscussions(first:1) { totalCount }
   repositoryDiscussionComments(first:1,onlyAnswers:true) { totalCount }
@@ -32,6 +31,7 @@ YEAR = """query($login:String!,$from:DateTime!,$to:DateTime!) {
  user(login:$login) {
   contributionsCollection(from:$from,to:$to) {
    totalCommitContributions
+   totalPullRequestReviewContributions
    contributionCalendar {
     weeks { contributionDays { date contributionCount } }
    }
@@ -71,7 +71,7 @@ def collect():
     now=datetime.now(timezone.utc)
     today=now.date()
     days={}
-    commits=0
+    commits=reviews=0
     for year in range(MIN_YEAR,today.year+1):
         a=datetime(year,1,1,tzinfo=timezone.utc)
         b=min(now,datetime(year+1,1,1,tzinfo=timezone.utc)-timedelta(seconds=1))
@@ -79,6 +79,7 @@ def collect():
             "from":a.isoformat().replace("+00:00","Z"),
             "to":b.isoformat().replace("+00:00","Z")})["user"]["contributionsCollection"]
         commits+=int(obj["totalCommitContributions"])
+        reviews+=int(obj["totalPullRequestReviewContributions"])
         for week in obj["contributionCalendar"]["weeks"]:
             for d in week["contributionDays"]:
                 day=date.fromisoformat(d["date"])
@@ -104,7 +105,7 @@ def collect():
         "stars":stars,"commits":commits,
         "pull_requests":int(first["pullRequests"]["totalCount"]),
         "merged_prs":int(first["mergedPRs"]["totalCount"]),
-        "reviews":int(first["pullRequestReviews"]["totalCount"]),
+        "reviews":reviews,
         "issues":int(first["issues"]["totalCount"]),
         "discussions":int(first["repositoryDiscussions"]["totalCount"]),
         "answers":int(first["repositoryDiscussionComments"]["totalCount"]),
