@@ -192,53 +192,110 @@ def fmt(value):
     return "—" if value is None else str(value) if isinstance(value,str) else f"{value:,}"
 
 def render(data):
-    items=[
-        ("STARS EARNED","stars","#68E7D6"),
-        ("TOTAL COMMITS","commits","#F1F6FD"),
-        ("PULL REQUESTS","pull_requests","#C8B6FF"),
-        ("PRs MERGED","merged_prs","#82C2FD"),
-        ("PRs REVIEWED","reviews","#F1F6FD"),
-        ("ISSUES OPENED","issues","#F1F6FD"),
-        ("DISCUSSIONS STARTED","discussions","#F1F6FD"),
-        ("DISCUSSIONS ANSWERED","answers","#C8B6FF"),
-        ("CONTRIBUTED (1Y)","outside","#F1F6FD"),
+    """Editorial hierarchy rather than a dense mini-card analytics grid.
+
+    Four lead numbers are genuinely readable on a normal GitHub profile
+    column; every other stat is present in a calmer two-row detail strip.
+    No metric is dropped, recalculated, or hardcoded.
+    """
+    primary = [
+        ("TOTAL COMMITS", "commits", "#F2F7FF"),
+        ("CONTRIBUTIONS", "contributions", "#83C3FF"),
+        ("CURRENT STREAK", "current_streak", "#65E9D5"),
+        ("PULL REQUESTS", "pull_requests", "#BCA7FF"),
     ]
-    parts=[]
-    for i,(label,key,color) in enumerate(items):
-        x,y=31+(i%3)*279,88+(i//3)*101
-        parts.append(f'<rect x="{x}" y="{y}" rx="11" width="267" height="93" fill="#132238" stroke="#233B58"/>')
-        parts.append(f'<text x="{x+17}" y="{y+27}" font-size="17.5" fill="#A9BBD4">{label}</text>')
-        parts.append(f'<text x="{x+17}" y="{y+73}" font-size="35" fill="{color}" font-weight="700">{escape(fmt(data[key]))}</text>')
-    streaks=[
-        ("TOTAL CONTRIBUTIONS","contributions","#82C2FD"),
-        ("CURRENT STREAK","current_streak","#68E7D6"),
-        ("LONGEST STREAK","longest_streak","#C8B6FF"),
+    secondary = [
+        ("STARS EARNED", "stars", "#66E8D8"),
+        ("PRs MERGED", "merged_prs", "#BCA7FF"),
+        ("PRs REVIEWED", "reviews", "#EFF5FF"),
+        ("ISSUES OPENED", "issues", "#EFF5FF"),
+        ("DISCUSSIONS STARTED", "discussions", "#EFF5FF"),
+        ("DISCUSSIONS ANSWERED", "answers", "#BCA7FF"),
+        ("CONTRIBUTED (1Y)", "outside", "#EFF5FF"),
+        ("LONGEST STREAK", "longest_streak", "#83C3FF"),
     ]
-    for i,(label,key,color) in enumerate(streaks):
-        x,y=894,91+i*101
-        parts.append(f'<rect x="{x}" y="{y}" rx="11" width="347" height="91" fill="#142139" stroke="#263D5D"/>')
-        parts.append(f'<rect x="{x+1}" y="{y+14}" rx="2" width="4" height="61" fill="{color}"/>')
-        parts.append(f'<text x="{x+22}" y="{y+27}" font-size="17.5" fill="#A9BBD4">{label}</text>')
-        parts.append(f'<text x="{x+22}" y="{y+71}" font-size="38" fill="{color}" font-weight="700">{escape(fmt(data[key]))}</text>')
-    updated=escape(data["updated"])
-    result=f'''<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="432" viewBox="0 0 1280 432" role="img" aria-label="Live public GitHub activity for {USER}, updated {updated}">
-<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0B1425"/><stop offset=".6" stop-color="#101C30"/><stop offset="1" stop-color="#131C32"/></linearGradient></defs>
-<rect x="1" y="1" rx="17" width="1278" height="430" fill="url(#bg)" stroke="#365375" stroke-width="2"/>
-<rect x="30" y="24" rx="2" width="5" height="33" fill="#63E9DA"/>
+    keys = [x[1] for x in primary + secondary]
+    expected = ("stars", "commits", "pull_requests", "merged_prs",
+                "reviews", "issues", "discussions", "answers",
+                "outside", "contributions", "current_streak", "longest_streak")
+    if len(keys) != len(set(keys)) or set(keys) != set(expected):
+        raise AssertionError("All 12 activity metrics must be displayed once")
+
+    blocks = []
+    # Primary strip: one shared surface with breathing room and slim dividers.
+    for i, (label, key, color) in enumerate(primary):
+        x = 55 + i * 302
+        blocks.append(
+            f'<g data-key="{key}">'
+            f'<rect x="{x}" y="121" width="36" height="4" rx="2" fill="{color}"/>'
+            f'<text x="{x}" y="156" font-size="21" fill="#A7BBD5" letter-spacing=".8">{escape(label)}</text>'
+            f'<text x="{x}" y="224" font-size="59" font-weight="750" letter-spacing="-1.5" fill="{color}">{escape(fmt(data[key]))}</text>'
+            '</g>'
+        )
+        if i:
+            divider_x = x - 26
+            blocks.append(
+                f'<path d="M{divider_x} 127V228" stroke="#304760" stroke-width="1.5" opacity=".85"/>'
+            )
+
+    # Secondary strip: 8 complete metrics; no repetitive boxed widgets.
+    for i, (label, key, color) in enumerate(secondary):
+        row, col = divmod(i, 4)
+        x = 55 + col * 302
+        ly = 323 + row * 92
+        vy = 366 + row * 92
+        blocks.append(
+            f'<g data-key="{key}">'
+            f'<text x="{x}" y="{ly}" font-size="20" fill="#9FB3D0" letter-spacing=".3">{escape(label)}</text>'
+            f'<text x="{x}" y="{vy}" font-size="36" font-weight="700" fill="{color}">{escape(fmt(data[key]))}</text>'
+            '</g>'
+        )
+        if col:
+            divider_x = x - 26
+            blocks.append(
+                f'<path d="M{divider_x} {ly-23}V{vy+5}" stroke="#29415A" stroke-width="1" opacity=".65"/>'
+            )
+
+    updated = escape(data["updated"])
+    rank = escape(str(data["rank"]))
+    result = f'''<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="500" viewBox="0 0 1280 500" role="img" aria-label="Daily GitHub activity for {USER}: all 12 metrics and rank, last updated {updated}">
+<defs>
+  <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#0C182A"/><stop offset=".56" stop-color="#12233C"/>
+    <stop offset="1" stop-color="#111D31"/>
+  </linearGradient>
+  <linearGradient id="accent" x1="0" x2="1">
+    <stop stop-color="#62E6D5"/><stop offset="1" stop-color="#A58EFA"/>
+  </linearGradient>
+</defs>
+<rect x="1" y="1" width="1278" height="498" rx="17" fill="url(#panel)" stroke="#355577" stroke-width="2"/>
+<path d="M23 1H1257" stroke="url(#accent)" stroke-width="2" opacity=".45"/>
 <g font-family="Arial,Helvetica,sans-serif">
-<text x="49" y="49" font-size="27" fill="#F1F6FD" font-weight="700">THE LIVE SIGNAL</text>
-<rect x="343" y="22" width="115" height="33" rx="16" stroke="#4C6591" fill="#19263D"/>
-<text x="400" y="45" text-anchor="middle" font-size="18" font-weight="700" fill="#BAA7FE">RANK {escape(data["rank"])}</text>
-<text x="1235" y="46" text-anchor="end" font-size="16" fill="#8FAAC7">GITHUB · UPDATED {updated}</text>
-<path d="M31 70H1249" stroke="#324B67" stroke-width="1.2"/>
-<rect x="878" y="84" rx="12" width="368" height="314" fill="#101C30" stroke="#304969"/>
-{''.join(parts)}
-<text x="38" y="414" font-size="15" fill="#829DB8">PUBLIC ACTIVITY · REGENERATED DAILY</text>
-<text x="1240" y="414" text-anchor="end" font-size="15" fill="#94E9DB">BUILD / TEST / REFINE</text>
-</g></svg>'''
+  <rect x="38" y="30" width="5" height="31" rx="2.5" fill="#65E9D5"/>
+  <text x="58" y="56" font-size="31" font-weight="800" letter-spacing=".25" fill="#F5F8FF">GITHUB ACTIVITY</text>
+  <rect x="365" y="30" width="104" height="31" rx="15.5" fill="#242744" stroke="#5B5D91"/>
+  <text x="417" y="51" text-anchor="middle" font-size="19" font-weight="750" fill="#C4B2FF">RANK {rank}</text>
+  <text x="1242" y="53" text-anchor="end" font-size="18" fill="#93ACC8">UPDATED {updated}</text>
+  <path d="M38 80H1242" stroke="#37506A" stroke-width="1.3"/>
+
+  <rect x="36" y="100" width="1208" height="151" rx="14" fill="#172841" opacity=".64"/>
+  {''.join(blocks[:7])}
+  <path d="M38 269H1242" stroke="#37506A" stroke-width="1.1"/>
+  <text x="54" y="292" font-size="18" letter-spacing="1.6" fill="#65E9D5" font-weight="700">THE REST OF THE STORY</text>
+  {''.join(blocks[7:])}
+
+  <path d="M38 476H1242" stroke="#30465E" stroke-width="1"/>
+  <text x="43" y="493" font-size="15" fill="#8FA8C4">LIVE METRICS · UPDATED AUTOMATICALLY</text>
+  <text x="1238" y="493" text-anchor="end" font-size="15" fill="#76E1D3">BUILD / TEST / REFINE</text>
+</g>
+</svg>'''
     import xml.etree.ElementTree as ET
     ET.fromstring(result)
-    if result.count('width="267"')!=9: raise AssertionError("Nine metric tiles required")
+    for key in expected:
+        if result.count(f'data-key="{key}"') != 1:
+            raise AssertionError("Missing, duplicated or altered metric: " + key)
+    if "RANK " + rank not in result:
+        raise AssertionError("Provider rank not rendered")
     return result
 
 if __name__=="__main__":
