@@ -60,6 +60,22 @@ def gql(query, vars):
     return obj["data"]
 
 def collect():
+    # Diagnostic for source parity; public SVG only, never logs credentials.
+    try:
+        import xml.etree.ElementTree as ET
+        u=("https://github-stats-extended.vercel.app/api?username=Nahian2002"
+           "&include_all_commits=true&show_icons=true"
+           "&show=reviews,discussions_started,discussions_answered,prs_merged"
+           "&theme=tokyonight&hide_border=true&hide_title=true&line_height=22")
+        req=urllib.request.Request(u,headers={"User-Agent":"Mozilla/5.0"})
+        with urllib.request.urlopen(req,timeout=25) as resp:
+            raw=resp.read()
+        root=ET.fromstring(raw)
+        tokens=[(n.text or "").strip() for n in root.iter()
+                if n.tag.rsplit("}",1)[-1] in ("text","tspan") and (n.text or "").strip()]
+        print("DIAGNOSTIC provider SVG",len(raw),"label-value tokens",tokens[:70],flush=True)
+    except Exception as e:
+        print("DIAGNOSTIC provider unavailable",type(e).__name__,str(e)[:120],flush=True)
     first=gql(BASE,{"login":USER,"cursor":None})["user"]
     if not first or first["login"].lower()!=USER.lower(): raise ValueError("Incorrect GitHub user")
     r=first["repositories"]
