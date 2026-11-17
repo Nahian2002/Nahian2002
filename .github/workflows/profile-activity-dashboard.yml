@@ -1,16 +1,9 @@
-name: Refresh GitHub profile activity dashboard
+# Archived profile dashboard: the README now renders live third-party stats
+# and streak cards directly. Run manually only when the historical SVG is needed.
+name: Regenerate archived profile activity dashboard (manual)
 
 on:
-  schedule:
-    - cron: '17 5 * * *'
   workflow_dispatch:
-  push:
-    branches:
-      - main
-      - revert/profile-activity-v13
-    paths:
-      - tools/render_profile_activity.py
-      - .github/workflows/profile-activity-dashboard.yml
 
 permissions:
   contents: write
