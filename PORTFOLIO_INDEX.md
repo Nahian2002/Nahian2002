@@ -1,7 +1,8 @@
 # Engineering Portfolio — Repository Index
 
 **Owner:** [Nahian2002](https://github.com/Nahian2002)  
-**Reviewed:** 2026-11-10  
+**Reviewed:** 2026-11-10 (portfolio scope and qualitative tiers)  
+**Navigation checked:** 2026-11-20 (public project entry points)  
 **Scope:** Public repositories only. Private repositories are deliberately excluded from this public index.
 
 This is an **architecture and maintenance index**, not a leaderboard. Complexity reflects the code and workflows visible in each repository, *not* project ambition, personal skill, popularity, or business value.
@@ -19,6 +20,12 @@ This is an **architecture and maintenance index**, not a leaderboard. Complexity
 | **1/5 — Learning exercises** | [Learning Java](https://github.com/Nahian2002/Learning-JAVA) | Small independent Java programming exercises | Group in **Foundations & Coursework** |
 
 The [Nahian2002 profile repository](https://github.com/Nahian2002/Nahian2002) owns the showcase and portfolio index. As a presentation repository, it is **not ranked** against applications.
+
+## Project entry-point notes
+
+- **NightWave:** Start with the [project overview](https://github.com/Nahian2002/NightWave/blob/main/README.md), [build and release guide](https://github.com/Nahian2002/NightWave/blob/main/docs/BUILD_AND_RELEASE.md), or [contributing guide](https://github.com/Nahian2002/NightWave/blob/main/CONTRIBUTING.md). The latest public release is [NightWave 55.7 (Android build 66)](https://github.com/Nahian2002/NightWave/releases/tag/nightwave-v55.7), and its matching source is the [nightwave-v55.7 source tag](https://github.com/Nahian2002/NightWave/tree/nightwave-v55.7). The default `main` branch is ongoing development with a separate alpha version/build configuration; it is **not** the source for public 55.7. Check out the release tag to reproduce 55.7, and do not treat a `main` build as a direct upgrade to that release.
+- **Automated Reminder:** Its [README and run guide](https://github.com/Nahian2002/Automated-Reminder/blob/main/README.md) lists JDK requirements and compile/run commands. It also clarifies that the app displays backup reminders but does **not** copy or back up files itself.
+- **Fitness Tracker:** The Java source files are grouped under `project/`; start at the [Java source directory](https://github.com/Nahian2002/Fitness-Tracker---CSE215L/tree/main/project).
 
 ## Portfolio structure
 
